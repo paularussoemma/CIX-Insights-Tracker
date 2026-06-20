@@ -4,16 +4,60 @@
     "name": "Existing Data Analysis",
     "project": "Original ReImagined",
     "ptag": "P1",
-    "teams": ["Category Management"],
-    "categories": ["Mattress"],
-    "markets": ["PT","ES","FR","CH","BE","UK","DE","AT","IT","IR","IN","NL","PH","JP","HK","KO","AU","CA","CO","MX","BR","CL"],
-    "pocs": ["Sofija"],
+    "teams": [
+      "Category Management"
+    ],
+    "categories": [
+      "Mattress"
+    ],
+    "markets": [
+      "PT",
+      "ES",
+      "FR",
+      "CH",
+      "BE",
+      "UK",
+      "DE",
+      "AT",
+      "IT",
+      "IR",
+      "IN",
+      "NL",
+      "PH",
+      "JP",
+      "HK",
+      "KO",
+      "AU",
+      "CA",
+      "CO",
+      "MX",
+      "BR",
+      "CL"
+    ],
+    "pocs": [
+      "Sofija"
+    ],
     "start": "2026-01",
     "end": "2026-03",
     "insights": [
-      {"desc":"Insight 1","impl":true,"ready":true,"impact":"yes"},
-      {"desc":"Insight 2","impl":true,"ready":true,"impact":"yes"},
-      {"desc":"Insights 3","impl":true,"ready":true,"impact":"yes"}
+      {
+        "desc": "Insight 1",
+        "impl": true,
+        "ready": true,
+        "impact": "yes"
+      },
+      {
+        "desc": "Insight 2",
+        "impl": true,
+        "ready": true,
+        "impact": "yes"
+      },
+      {
+        "desc": "Insights 3",
+        "impl": true,
+        "ready": true,
+        "impact": "yes"
+      }
     ]
   },
   {
@@ -21,15 +65,45 @@
     "name": "Mystery Orders",
     "project": "Right First Time",
     "ptag": "P1",
-    "teams": ["Markets","Ops","CE"],
-    "categories": ["Mattress"],
-    "markets": ["PT","ES","FR","CH","BE","UK","DE","AT","IT","IR","NL"],
-    "pocs": ["Egon"],
+    "teams": [
+      "Markets",
+      "Ops",
+      "CE"
+    ],
+    "categories": [
+      "Mattress"
+    ],
+    "markets": [
+      "PT",
+      "ES",
+      "FR",
+      "CH",
+      "BE",
+      "UK",
+      "DE",
+      "AT",
+      "IT",
+      "IR",
+      "NL"
+    ],
+    "pocs": [
+      "Egon"
+    ],
     "start": "2026-01",
     "end": "2026-03",
     "insights": [
-      {"desc":"Insight 1","impl":true,"ready":true,"impact":"yes"},
-      {"desc":"Insights 2","impl":true,"ready":false,"impact":""}
+      {
+        "desc": "Insight 1",
+        "impl": true,
+        "ready": true,
+        "impact": "yes"
+      },
+      {
+        "desc": "Insights 2",
+        "impl": true,
+        "ready": false,
+        "impact": ""
+      }
     ]
   },
   {
@@ -37,15 +111,37 @@
     "name": "Sleep Tests",
     "project": "Scale Performance Line",
     "ptag": "P2",
-    "teams": ["Category Management","R&D","Engineering"],
-    "categories": ["Mattress"],
-    "markets": ["FR","DE","NL"],
-    "pocs": ["Sofija"],
+    "teams": [
+      "Category Management",
+      "R&D",
+      "Engineering"
+    ],
+    "categories": [
+      "Mattress"
+    ],
+    "markets": [
+      "FR",
+      "DE",
+      "NL"
+    ],
+    "pocs": [
+      "Sofija"
+    ],
     "start": "2026-01",
     "end": "2026-02",
     "insights": [
-      {"desc":"Insight 1: Mattress cover is slippery","impl":true,"ready":false,"impact":""},
-      {"desc":"Insight 2","impl":true,"ready":false,"impact":""}
+      {
+        "desc": "Insight 1: Mattress cover is slippery",
+        "impl": true,
+        "ready": false,
+        "impact": ""
+      },
+      {
+        "desc": "Insight 2",
+        "impl": true,
+        "ready": false,
+        "impact": ""
+      }
     ]
   },
   {
@@ -53,15 +149,36 @@
     "name": "Performance Pillow Design Test",
     "project": "Scale Performance Line",
     "ptag": "P2",
-    "teams": ["Category Management","R&D","Engineering"],
-    "categories": ["Pillow"],
-    "markets": ["DE","FR"],
-    "pocs": ["Paula"],
+    "teams": [
+      "Category Management",
+      "R&D",
+      "Engineering"
+    ],
+    "categories": [
+      "Pillow"
+    ],
+    "markets": [
+      "DE",
+      "FR"
+    ],
+    "pocs": [
+      "Paula"
+    ],
     "start": "2026-02",
     "end": "2026-02",
     "insights": [
-      {"desc":"Insight 1 - final design recommendation","impl":true,"ready":false,"impact":"yes"},
-      {"desc":"Insight 2 - final design recommendation","impl":true,"ready":false,"impact":"yes"}
+      {
+        "desc": "Insight 1 - final design recommendation",
+        "impl": true,
+        "ready": false,
+        "impact": "yes"
+      },
+      {
+        "desc": "Insight 2 - final design recommendation",
+        "impl": true,
+        "ready": false,
+        "impact": "yes"
+      }
     ]
   },
   {
@@ -69,16 +186,41 @@
     "name": "Product Finder",
     "project": "Scale Performance Line",
     "ptag": "P2",
-    "teams": ["Tech","Ecomm","CRO"],
-    "categories": ["Mattress"],
-    "markets": ["DE"],
-    "pocs": ["Egon"],
+    "teams": [
+      "Tech",
+      "Ecomm",
+      "CRO"
+    ],
+    "categories": [
+      "Mattress"
+    ],
+    "markets": [
+      "DE"
+    ],
+    "pocs": [
+      "Egon"
+    ],
     "start": "2026-02",
     "end": "2026-03",
     "insights": [
-      {"desc":"Insight 1","impl":true,"ready":true,"impact":"yes"},
-      {"desc":"Insight 2","impl":true,"ready":false,"impact":""},
-      {"desc":"Insight 3","impl":true,"ready":false,"impact":""}
+      {
+        "desc": "Insight 1",
+        "impl": true,
+        "ready": true,
+        "impact": "yes"
+      },
+      {
+        "desc": "Insight 2",
+        "impl": true,
+        "ready": false,
+        "impact": ""
+      },
+      {
+        "desc": "Insight 3",
+        "impl": true,
+        "ready": false,
+        "impact": ""
+      }
     ]
   },
   {
@@ -86,17 +228,67 @@
     "name": "Checkout Poll",
     "project": "Increase Insights Effectiveness",
     "ptag": "P2",
-    "teams": ["Markets","Ecomm","Marketing","Tech"],
+    "teams": [
+      "Markets",
+      "Ecomm",
+      "Marketing",
+      "Tech"
+    ],
     "categories": [],
-    "markets": ["PT","ES","FR","CH","BE","UK","DE","AT","IT","IR","IN","NL","PH","JP","HK","KO","AU","CA","CO","MX","BR","CL"],
-    "pocs": ["Joana"],
+    "markets": [
+      "PT",
+      "ES",
+      "FR",
+      "CH",
+      "BE",
+      "UK",
+      "DE",
+      "AT",
+      "IT",
+      "IR",
+      "IN",
+      "NL",
+      "PH",
+      "JP",
+      "HK",
+      "KO",
+      "AU",
+      "CA",
+      "CO",
+      "MX",
+      "BR",
+      "CL"
+    ],
+    "pocs": [
+      "Joana"
+    ],
     "start": "2026-01",
     "end": "2026-02",
     "insights": [
-      {"desc":"Insight 1","impl":true,"ready":false,"impact":""},
-      {"desc":"Insight 2","impl":true,"ready":false,"impact":""},
-      {"desc":"Insight 3","impl":true,"ready":false,"impact":""},
-      {"desc":"Insight 4","impl":true,"ready":false,"impact":""}
+      {
+        "desc": "Insight 1",
+        "impl": true,
+        "ready": false,
+        "impact": ""
+      },
+      {
+        "desc": "Insight 2",
+        "impl": true,
+        "ready": false,
+        "impact": ""
+      },
+      {
+        "desc": "Insight 3",
+        "impl": true,
+        "ready": false,
+        "impact": ""
+      },
+      {
+        "desc": "Insight 4",
+        "impl": true,
+        "ready": false,
+        "impact": ""
+      }
     ]
   },
   {
@@ -104,14 +296,23 @@
     "name": "Test on Customer Subscription Journey",
     "project": "Increase Insights Effectiveness",
     "ptag": "P2",
-    "teams": ["CRM"],
+    "teams": [
+      "CRM"
+    ],
     "categories": [],
     "markets": [],
-    "pocs": ["Paula"],
+    "pocs": [
+      "Paula"
+    ],
     "start": "2026-02",
     "end": "2026-02",
     "insights": [
-      {"desc":"Insight 1","impl":true,"ready":true,"impact":"no"}
+      {
+        "desc": "Insight 1",
+        "impl": true,
+        "ready": true,
+        "impact": "no"
+      }
     ]
   },
   {
@@ -119,14 +320,29 @@
     "name": "India Size Selector",
     "project": "Increase Insights effectiveness",
     "ptag": "P2",
-    "teams": ["Tech","Ecomm","CRO"],
-    "categories": ["Mattress"],
-    "markets": ["IN"],
-    "pocs": ["Egon"],
+    "teams": [
+      "Tech",
+      "Ecomm",
+      "CRO"
+    ],
+    "categories": [
+      "Mattress"
+    ],
+    "markets": [
+      "IN"
+    ],
+    "pocs": [
+      "Egon"
+    ],
     "start": "2026-03",
     "end": "2026-03",
     "insights": [
-      {"desc":"Insight 1","impl":true,"ready":true,"impact":"no"}
+      {
+        "desc": "Insight 1",
+        "impl": true,
+        "ready": true,
+        "impact": "no"
+      }
     ]
   },
   {
@@ -134,18 +350,61 @@
     "name": "Original Line - Perceived Value Tests",
     "project": "Original Reimagined",
     "ptag": "P1",
-    "teams": ["Markets","R&D","Engineering","Brand"],
-    "categories": ["Mattress"],
-    "markets": ["PT","ES","FR","UK","DE","AU","MX","JP"],
-    "pocs": ["Sofija"],
+    "teams": [
+      "Markets",
+      "R&D",
+      "Engineering",
+      "Brand"
+    ],
+    "categories": [
+      "Mattress"
+    ],
+    "markets": [
+      "PT",
+      "ES",
+      "FR",
+      "UK",
+      "DE",
+      "AU",
+      "MX",
+      "JP"
+    ],
+    "pocs": [
+      "Sofija"
+    ],
     "start": "2026-04",
     "end": "2026-04",
     "insights": [
-      {"desc":"Insight 1: \"Emma Original and Emma Lite underperform in comparison to Emma Pro and other global competitor mattresses due to mattress cover perception and layfeel.\" Action 1: Engineers are prototyping new Original mattresses to upgrade stability of the Original line. Product brief for R&D was based on the PVT learnings. Timeline: June-September 2026 Action 2: Product design team is prototyping the new mattress covers. Covers are validated though an iterative testing in June-July. Timeline: June-September 2026","impl":true,"ready":false,"impact":""},
-      {"desc":"Insight 2: \"Original Line consumers struggle to distinguish Original mattresses as the models are too visually similar to signal clear tiering or progression. Entry and mid-tier (Lite and Original) blur together, weakening perceived value.\" Action 1: Product design team is prototyping the new mattress covers (mentioned above). Timeline: June-September 2026 Action 2: CIX (in collaboration with CatMat; Creative; Global Brand) will test several portfolio configurations to identify the option that brings meaningful value difference between each of the tiers to consumer. Timeline (Concept test): mid June-mid August 2026","impl":true,"ready":false,"impact":""},
-      {"desc":"Insight 3: \"Emma Original Pro is the strongest global performer winning on comfort-support balance as well as design.\" Action 1: Product brief for R&D took this into account making Original Pro an anchor for the upcoming product prototyping.","impl":true,"ready":true,"impact":"yes"},
-      {"desc":"Insight 4: \"A few countries (JP; DE) show a clear preference for a firmer profile - a mattress that feels firm in the core, supportive in the lower back and easy to move on.\" Action: Not implemented this quarter as we are prioritizing medium-soft cluster, but also integrated in the product brief.","impl":false,"ready":false,"impact":""},
-      {"desc":"Insight 5: \"Consumers know what they want physically but lack the language to express it. Stated preference does not equal actual behavior.\" Action: CIX will be organizing workshops with country teams & global stakeholders (Global Brand; IM) to share relevant insights and ideate on action teams. Timeline: June-July 2026","impl":true,"ready":false,"impact":""}
+      {
+        "desc": "Insight 1: \"Emma Original and Emma Lite underperform in comparison to Emma Pro and other global competitor mattresses due to mattress cover perception and layfeel.\" Action 1: Engineers are prototyping new Original mattresses to upgrade stability of the Original line. Product brief for R&D was based on the PVT learnings. Timeline: June-September 2026 Action 2: Product design team is prototyping the new mattress covers. Covers are validated though an iterative testing in June-July. Timeline: June-September 2026",
+        "impl": true,
+        "ready": false,
+        "impact": ""
+      },
+      {
+        "desc": "Insight 2: \"Original Line consumers struggle to distinguish Original mattresses as the models are too visually similar to signal clear tiering or progression. Entry and mid-tier (Lite and Original) blur together, weakening perceived value.\" Action 1: Product design team is prototyping the new mattress covers (mentioned above). Timeline: June-September 2026 Action 2: CIX (in collaboration with CatMat; Creative; Global Brand) will test several portfolio configurations to identify the option that brings meaningful value difference between each of the tiers to consumer. Timeline (Concept test): mid June-mid August 2026",
+        "impl": true,
+        "ready": false,
+        "impact": ""
+      },
+      {
+        "desc": "Insight 3: \"Emma Original Pro is the strongest global performer winning on comfort-support balance as well as design.\" Action 1: Product brief for R&D took this into account making Original Pro an anchor for the upcoming product prototyping.",
+        "impl": true,
+        "ready": true,
+        "impact": "yes"
+      },
+      {
+        "desc": "Insight 4: \"A few countries (JP; DE) show a clear preference for a firmer profile - a mattress that feels firm in the core, supportive in the lower back and easy to move on.\" Action: Not implemented this quarter as we are prioritizing medium-soft cluster, but also integrated in the product brief.",
+        "impl": false,
+        "ready": false,
+        "impact": ""
+      },
+      {
+        "desc": "Insight 5: \"Consumers know what they want physically but lack the language to express it. Stated preference does not equal actual behavior.\" Action: CIX will be organizing workshops with country teams & global stakeholders (Global Brand; IM) to share relevant insights and ideate on action teams. Timeline: June-July 2026",
+        "impl": true,
+        "ready": false,
+        "impact": ""
+      }
     ]
   },
   {
@@ -153,20 +412,70 @@
     "name": "Quality Perception Research - Wave 1",
     "project": "Increase Brand Preference",
     "ptag": "P2",
-    "teams": ["B&CX","Ecomm","Markets","Brand"],
+    "teams": [
+      "B&CX",
+      "Ecomm",
+      "Markets",
+      "Brand"
+    ],
     "categories": [],
-    "markets": ["FR","UK","DE","JP","AU","MX","BR"],
-    "pocs": ["Joana"],
+    "markets": [
+      "FR",
+      "UK",
+      "DE",
+      "JP",
+      "AU",
+      "MX",
+      "BR"
+    ],
+    "pocs": [
+      "Joana"
+    ],
     "start": "2026-04",
     "end": "2026-04",
     "insights": [
-      {"desc":"Insight 1: \"AU consumers rely on community-established signals (reviews, friend recommendations, platform ratings)\" Action: Enroll in Trustpilot (~€10K/year) to address current low score (1.3) Timeline: June-July 2026","impl":true,"ready":false,"impact":""},
-      {"desc":"Insight 2: \"AU consumers have a high need for detailed product specs, clear differentiation and stronger proof points\" Action 1: Run full PDP audit using Luma's Source of Truth doc; identify incorrect, missing, or insufficiently detailed product info Timeline: June 2026 Action 2: Update copy from audit output and R&D input; pass through copywriting and Legal validation Timeline: July-August 2026","impl":true,"ready":true,"impact":"yes"},
-      {"desc":"Insight 3: \"JP consumer evidence requirements are one of the highest in the dataset - product claims must be proven\" Action 1: Audit and update JP webshop comms Timeline: June-July 2026 Action 2: Collect scientific claims for use across webshop and paid media; update website Timeline: July 2026","impl":true,"ready":false,"impact":""},
-      {"desc":"Insight 4: \"JP consumers respond to brands that signal safety, reliability, heritage, and institutional credibility\" Action 1: Apply for local recognition and awards, including JIS certification Timeline: July-August 2026 Action 2: Showcase JIS recognition across webshop, paid media and CRM Timeline: July 2026","impl":false,"ready":false,"impact":""},
-      {"desc":"Insight 5: \"JP over-indexes on testing as the quality-forming moment (34% vs. 29% global) — highest of any market\" Action: Better highlight offline presence on webshop; push 100-night trial across webshop and paid media Timeline: July 2026","impl":false,"ready":false,"impact":""},
-      {"desc":"Insight 6: \"JP consumers are highly detail-oriented and expect thorough product information\" Action: Run JP PDP audit (same workstream as AU, Stage 1 + Stage 2 above) Timeline: July-August 2026","impl":false,"ready":false,"impact":""},
-      {"desc":"Insight 7: \"MX consumers are achievement-driven, socially visible and aspirational — they favour brands that signal success and market leadership\" Action: Country brand strategy under review based on MX CIX results","impl":true,"ready":true,"impact":"yes"}
+      {
+        "desc": "Insight 1: \"AU consumers rely on community-established signals (reviews, friend recommendations, platform ratings)\" Action: Enroll in Trustpilot (~â¬10K/year) to address current low score (1.3) Timeline: June-July 2026",
+        "impl": true,
+        "ready": false,
+        "impact": ""
+      },
+      {
+        "desc": "Insight 2: \"AU consumers have a high need for detailed product specs, clear differentiation and stronger proof points\" Action 1: Run full PDP audit using Luma's Source of Truth doc; identify incorrect, missing, or insufficiently detailed product info Timeline: June 2026 Action 2: Update copy from audit output and R&D input; pass through copywriting and Legal validation Timeline: July-August 2026",
+        "impl": true,
+        "ready": true,
+        "impact": "yes"
+      },
+      {
+        "desc": "Insight 3: \"JP consumer evidence requirements are one of the highest in the dataset - product claims must be proven\" Action 1: Audit and update JP webshop comms Timeline: June-July 2026 Action 2: Collect scientific claims for use across webshop and paid media; update website Timeline: July 2026",
+        "impl": true,
+        "ready": false,
+        "impact": ""
+      },
+      {
+        "desc": "Insight 4: \"JP consumers respond to brands that signal safety, reliability, heritage, and institutional credibility\" Action 1: Apply for local recognition and awards, including JIS certification Timeline: July-August 2026 Action 2: Showcase JIS recognition across webshop, paid media and CRM Timeline: July 2026",
+        "impl": false,
+        "ready": false,
+        "impact": ""
+      },
+      {
+        "desc": "Insight 5: \"JP over-indexes on testing as the quality-forming moment (34% vs. 29% global) â highest of any market\" Action: Better highlight offline presence on webshop; push 100-night trial across webshop and paid media Timeline: July 2026",
+        "impl": false,
+        "ready": false,
+        "impact": ""
+      },
+      {
+        "desc": "Insight 6: \"JP consumers are highly detail-oriented and expect thorough product information\" Action: Run JP PDP audit (same workstream as AU, Stage 1 + Stage 2 above) Timeline: July-August 2026",
+        "impl": false,
+        "ready": false,
+        "impact": ""
+      },
+      {
+        "desc": "Insight 7: \"MX consumers are achievement-driven, socially visible and aspirational â they favour brands that signal success and market leadership\" Action: Country brand strategy under review based on MX CIX results",
+        "impl": true,
+        "ready": true,
+        "impact": "yes"
+      }
     ]
   },
   {
@@ -174,15 +483,31 @@
     "name": "Back Friday - Consumer Trends",
     "project": "Increase Insights Effectiveness",
     "ptag": "P2",
-    "teams": ["Brand","Creative","B&CX"],
+    "teams": [
+      "Brand",
+      "Creative",
+      "B&CX"
+    ],
     "categories": [],
     "markets": [],
-    "pocs": ["Joana"],
+    "pocs": [
+      "Joana"
+    ],
     "start": "2026-04",
     "end": "2026-05",
     "insights": [
-      {"desc":"Insight 1: \"The burned-out consumer isn't looking for just another deal — they want permission to invest in themselves despite global uncertainty.\" Lean into self-investment framing Action: Implemented in BF script: \"You can afford to dream\"","impl":true,"ready":false,"impact":""},
-      {"desc":"Insight 2: \"Life transitions drive the majority of mattress purchases.\" Touch on \"new chapter\" energy and nostalgia for good sleep Action: Implemented in BF TV script: \"The details make the deal\"","impl":false,"ready":false,"impact":""}
+      {
+        "desc": "Insight 1: \"The burned-out consumer isn't looking for just another deal â they want permission to invest in themselves despite global uncertainty.\" Lean into self-investment framing Action: Implemented in BF script: \"You can afford to dream\"",
+        "impl": true,
+        "ready": false,
+        "impact": ""
+      },
+      {
+        "desc": "Insight 2: \"Life transitions drive the majority of mattress purchases.\" Touch on \"new chapter\" energy and nostalgia for good sleep Action: Implemented in BF TV script: \"The details make the deal\"",
+        "impl": false,
+        "ready": false,
+        "impact": ""
+      }
     ]
   },
   {
@@ -190,17 +515,50 @@
     "name": "Webshop Quality Research",
     "project": "Increase insights Effectiveness",
     "ptag": "P2",
-    "teams": ["Tech","Ecomm","Markets","Brand"],
+    "teams": [
+      "Tech",
+      "Ecomm",
+      "Markets",
+      "Brand"
+    ],
     "categories": [],
-    "markets": ["FR","DE","UK","JP","AU"],
-    "pocs": ["Egon"],
+    "markets": [
+      "FR",
+      "DE",
+      "UK",
+      "JP",
+      "AU"
+    ],
+    "pocs": [
+      "Egon"
+    ],
     "start": "2026-04",
     "end": "2026-04",
     "insights": [
-      {"desc":"Insight 1: \"Social proof is essential but must be credible and prominent\" Actions: Japan: ~20-change roadmap across Sales Page, Home Page, Category Page, PDP. Planned additional research and working on a testing roadmap Australia: ~15-change roadmap across Sales Page, Home Page, Category Page, PDP. Defined testing roadmap","impl":true,"ready":false,"impact":""},
-      {"desc":"Insight 2: \"Trial periods and warranties are powerful trust drivers that Emma underuses\" Actions: Japan: ~20-change roadmap across Sales Page, Home Page, Category Page, PDP. Planned additional research and working on a testing roadmap Australia: ~15-change roadmap across Sales Page, Home Page, Category Page, PDP. Defined testing roadmap","impl":true,"ready":false,"impact":""},
-      {"desc":"Insight 3: \"Visual content is the primary evaluation factor\" Actions: Japan: ~20-change roadmap across Sales Page, Home Page, Category Page, PDP. Planned additional research and working on a testing roadmap Australia: ~15-change roadmap across Sales Page, Home Page, Category Page, PDP. Defined testing roadmap","impl":true,"ready":false,"impact":""},
-      {"desc":"Insight 4: \"Benefit-led storytelling outperforms spec-led copy\" Actions: Japan: ~20-change roadmap across Sales Page, Home Page, Category Page, PDP. Planned additional research and working on a testing roadmap Australia: ~15-change roadmap across Sales Page, Home Page, Category Page, PDP. Defined testing roadmap","impl":true,"ready":false,"impact":""}
+      {
+        "desc": "Insight 1: \"Social proof is essential but must be credible and prominent\" Actions: Japan: ~20-change roadmap across Sales Page, Home Page, Category Page, PDP. Planned additional research and working on a testing roadmap Australia: ~15-change roadmap across Sales Page, Home Page, Category Page, PDP. Defined testing roadmap",
+        "impl": true,
+        "ready": false,
+        "impact": ""
+      },
+      {
+        "desc": "Insight 2: \"Trial periods and warranties are powerful trust drivers that Emma underuses\" Actions: Japan: ~20-change roadmap across Sales Page, Home Page, Category Page, PDP. Planned additional research and working on a testing roadmap Australia: ~15-change roadmap across Sales Page, Home Page, Category Page, PDP. Defined testing roadmap",
+        "impl": true,
+        "ready": false,
+        "impact": ""
+      },
+      {
+        "desc": "Insight 3: \"Visual content is the primary evaluation factor\" Actions: Japan: ~20-change roadmap across Sales Page, Home Page, Category Page, PDP. Planned additional research and working on a testing roadmap Australia: ~15-change roadmap across Sales Page, Home Page, Category Page, PDP. Defined testing roadmap",
+        "impl": true,
+        "ready": false,
+        "impact": ""
+      },
+      {
+        "desc": "Insight 4: \"Benefit-led storytelling outperforms spec-led copy\" Actions: Japan: ~20-change roadmap across Sales Page, Home Page, Category Page, PDP. Planned additional research and working on a testing roadmap Australia: ~15-change roadmap across Sales Page, Home Page, Category Page, PDP. Defined testing roadmap",
+        "impl": true,
+        "ready": false,
+        "impact": ""
+      }
     ]
   },
   {
@@ -208,14 +566,32 @@
     "name": "Continuous Discovery",
     "project": "Increase Insights Effectiveness; Optimize Shopping Journey",
     "ptag": "P2",
-    "teams": ["Tech","Ecomm","CRO"],
-    "categories": ["Mattress"],
-    "markets": ["FR","ES","UK","DE"],
-    "pocs": ["Egon"],
+    "teams": [
+      "Tech",
+      "Ecomm",
+      "CRO"
+    ],
+    "categories": [
+      "Mattress"
+    ],
+    "markets": [
+      "FR",
+      "ES",
+      "UK",
+      "DE"
+    ],
+    "pocs": [
+      "Egon"
+    ],
     "start": "2026-04",
     "end": "2026-05",
     "insights": [
-      {"desc":"Insight 1: \"Users think returning a mattress is a hassle and most don't consider it a real option — leading them to delay purchase, buy from known brands, or visit physical stores instead\" Action: AB test UK #58 Win. Return-focused USPs + return process modal on PDP +4.27% CVR +3.10% ATC +3.08% Begin Checkout +1.56% RPU -2.64% AOV Desktop: strong positive (+11.32% RPU). Mobile: funnel gains but AOV compression. Recommendation: roll out on desktop across all categories; revisit mobile before rolling out.","impl":true,"ready":true,"impact":"yes"}
+      {
+        "desc": "Insight 1: \"Users think returning a mattress is a hassle and most don't consider it a real option â leading them to delay purchase, buy from known brands, or visit physical stores instead\" Action: AB test UK #58 Win. Return-focused USPs + return process modal on PDP +4.27% CVR +3.10% ATC +3.08% Begin Checkout +1.56% RPU -2.64% AOV Desktop: strong positive (+11.32% RPU). Mobile: funnel gains but AOV compression. Recommendation: roll out on desktop across all categories; revisit mobile before rolling out.",
+        "impl": true,
+        "ready": true,
+        "impact": "yes"
+      }
     ]
   },
   {
@@ -223,18 +599,63 @@
     "name": "Mystery Orders",
     "project": "Right First Time",
     "ptag": "P1",
-    "teams": ["Ops","Markets","CE"],
-    "categories": ["Mattress"],
-    "markets": ["PT","ES","FR","CH","BE","UK","DE","AT","IT","IR","NL"],
-    "pocs": ["Egon"],
+    "teams": [
+      "Ops",
+      "Markets",
+      "CE"
+    ],
+    "categories": [
+      "Mattress"
+    ],
+    "markets": [
+      "PT",
+      "ES",
+      "FR",
+      "CH",
+      "BE",
+      "UK",
+      "DE",
+      "AT",
+      "IT",
+      "IR",
+      "NL"
+    ],
+    "pocs": [
+      "Egon"
+    ],
     "start": "2026-05",
     "end": "2026-05",
     "insights": [
-      {"desc":"Insight 1: \"Delivery window is too broad (3-10 days); exact date/time often only shared same-day\" Action: Lead Time accuracy model — daily-updated, live in 5 countries; the rest targeting June 2026","impl":true,"ready":false,"impact":""},
-      {"desc":"Insight 2: \"Critical Emma and carrier communication conflict across touchpoints\" Action: Order Status Page redesign — Phase 1 live; full rebuild targeting September 2026","impl":true,"ready":false,"impact":""},
-      {"desc":"Insight 3: \"Order tracking is unreliable across most markets\" Action: Order Status Page redesign — Phase 1 live; full rebuild targeting September 2026","impl":true,"ready":false,"impact":""},
-      {"desc":"Insight 4: \"Return link is critical to customers and is missing from the confirmation email\" Action: New Emma-owned Return Portal — targeting June 2026","impl":false,"ready":false,"impact":""},
-      {"desc":"Insight 5: \"Returns pickup is unreliable and slow, causing high frustration levels and potential detraction\" Action 1: New Emma-owned Return Portal — targeting June 2026 Action 2: Refunds speed & automation — targeting 4-day manual / 24-hour automated; target Q3 2026","impl":false,"ready":false,"impact":""}
+      {
+        "desc": "Insight 1: \"Delivery window is too broad (3-10 days); exact date/time often only shared same-day\" Action: Lead Time accuracy model â daily-updated, live in 5 countries; the rest targeting June 2026",
+        "impl": true,
+        "ready": false,
+        "impact": ""
+      },
+      {
+        "desc": "Insight 2: \"Critical Emma and carrier communication conflict across touchpoints\" Action: Order Status Page redesign â Phase 1 live; full rebuild targeting September 2026",
+        "impl": true,
+        "ready": false,
+        "impact": ""
+      },
+      {
+        "desc": "Insight 3: \"Order tracking is unreliable across most markets\" Action: Order Status Page redesign â Phase 1 live; full rebuild targeting September 2026",
+        "impl": true,
+        "ready": false,
+        "impact": ""
+      },
+      {
+        "desc": "Insight 4: \"Return link is critical to customers and is missing from the confirmation email\" Action: New Emma-owned Return Portal â targeting June 2026",
+        "impl": false,
+        "ready": false,
+        "impact": ""
+      },
+      {
+        "desc": "Insight 5: \"Returns pickup is unreliable and slow, causing high frustration levels and potential detraction\" Action 1: New Emma-owned Return Portal â targeting June 2026 Action 2: Refunds speed & automation â targeting 4-day manual / 24-hour automated; target Q3 2026",
+        "impl": false,
+        "ready": false,
+        "impact": ""
+      }
     ]
   },
   {
@@ -242,17 +663,63 @@
     "name": "Bundles Research",
     "project": "Optimize Shopping Journey; Growth Levers",
     "ptag": "",
-    "teams": ["Tech","Ecomm","Markets","CRO"],
+    "teams": [
+      "Tech",
+      "Ecomm",
+      "Markets",
+      "CRO"
+    ],
     "categories": [],
-    "markets": ["ES","FR","DE","BR"],
-    "pocs": ["Egon","Team Swap"],
+    "markets": [
+      "ES",
+      "FR",
+      "DE",
+      "BR"
+    ],
+    "pocs": [
+      "Egon",
+      "Team Swap"
+    ],
     "start": "2026-05",
     "end": "2026-06",
     "insights": [
-      {"desc":"Insight 1: \"Customization is the #1 improvement lever — 51.8% want more control over pack composition\"","impl":false,"ready":false,"impact":""},
-      {"desc":"Insight 2: \"58% start with mattress intent; the bundle converts as an upgrade when savings are obvious\"","impl":false,"ready":false,"impact":""},
-      {"desc":"Insight 3: \"30-50% discount is the sweet spot — 55% need at least 30% off; deeper cuts hurt perceived quality\"","impl":false,"ready":false,"impact":""},
-      {"desc":"Insight 4: \"Detractors question quality and design more than cost — proof through reviews and certifications is the fix\"","impl":false,"ready":false,"impact":""}
+      {
+        "desc": "Insight 1: \"Customization is the #1 improvement lever â 51.8% want more control over pack composition\"",
+        "impl": false,
+        "ready": false,
+        "impact": ""
+      },
+      {
+        "desc": "Insight 2: \"58% start with mattress intent; the bundle converts as an upgrade when savings are obvious\"",
+        "impl": false,
+        "ready": false,
+        "impact": ""
+      },
+      {
+        "desc": "Insight 3: \"30-50% discount is the sweet spot â 55% need at least 30% off; deeper cuts hurt perceived quality\"",
+        "impl": false,
+        "ready": false,
+        "impact": ""
+      },
+      {
+        "desc": "Insight 4: \"Detractors question quality and design more than cost â proof through reviews and certifications is the fix\"",
+        "impl": false,
+        "ready": false,
+        "impact": ""
+      }
     ]
+  },
+  {
+    "id": "CIX-2026-016",
+    "name": "adasdsadasd",
+    "project": "",
+    "ptag": "",
+    "teams": [],
+    "categories": [],
+    "markets": [],
+    "pocs": [],
+    "start": "",
+    "end": "",
+    "insights": []
   }
 ]
