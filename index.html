@@ -1,0 +1,433 @@
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+:root{
+  --or:#FF8900;--bg:#FAF4E8;--card:#F0E3C8;--dark:#3D3730;--muted:#8A7E74;--bdr:#D8C8A4;--wh:#FFFFFF;
+  --font-s:Inter,'Trebuchet MS',Arial,sans-serif;--font-serif:Georgia,serif;
+}
+body{font-family:var(--font-s);background:var(--bg);color:var(--dark);font-size:13px;}
+.page{padding:20px 24px;max-width:1500px;margin:0 auto;}
+.topbar{display:flex;align-items:center;justify-content:space-between;margin-bottom:20px;}
+.logo{font-family:var(--font-serif);font-size:20px;color:var(--or);font-weight:400;}
+.logo em{font-style:normal;font-size:12px;font-family:var(--font-s);color:var(--muted);margin-left:10px;letter-spacing:.08em;}
+.add-btn{background:var(--or);color:#fff;border:none;border-radius:20px;padding:9px 18px;font-size:13px;font-weight:600;cursor:pointer;display:flex;align-items:center;gap:6px;font-family:var(--font-s);}
+.add-btn:hover{background:#e07800;}
+.top-row{display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:16px;margin-bottom:16px;align-items:stretch;}
+.kpi-card,.chart-card{background:var(--wh);border:1px solid var(--bdr);border-radius:14px;padding:20px;display:flex;flex-direction:column;}
+.kpi-eyebrow{font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:4px;}
+.kpi-name{font-size:12px;font-weight:600;color:var(--dark);margin-bottom:14px;line-height:1.3;}
+.kpi-big{font-family:var(--font-serif);font-size:48px;font-weight:400;color:var(--or);line-height:1;}
+.kpi-detail{font-size:11px;color:var(--muted);margin-top:5px;}
+.badge{display:inline-flex;align-items:center;gap:4px;font-size:11px;font-weight:600;padding:3px 9px;border-radius:12px;margin-top:8px;}
+.badge-hit{background:#e6f4ea;color:#2e7d32;}
+.badge-miss{background:#fce8e6;color:#c62828;}
+.badge-na{background:#f1f1f1;color:#888;}
+.progress-fill{height:100%;border-radius:6px;background:var(--or);transition:width .4s;}
+.progress-fill.green{background:#43a047;}
+.progress-fill.red{background:#e53935;}
+.q-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:auto;padding-top:16px;}
+.q-box{background:var(--card);border-radius:8px;padding:10px 8px;text-align:center;}
+.q-label{font-size:9px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:3px;}
+.q-val{font-family:var(--font-serif);font-size:22px;color:var(--dark);}
+.q-badge{font-size:9px;font-weight:600;padding:1px 6px;border-radius:8px;margin-top:4px;display:inline-block;}
+.chart-card{padding:16px;}
+.chart-title{font-size:11px;font-weight:600;color:var(--muted);letter-spacing:.08em;text-transform:uppercase;margin-bottom:10px;}
+.chart-canvas-wrap{flex:1;position:relative;min-height:0;}
+.chart-legend{display:flex;flex-wrap:wrap;gap:5px;margin-top:10px;}
+.table-bar{display:flex;align-items:center;gap:10px;margin-bottom:12px;flex-wrap:wrap;}
+.table-bar select{font-size:12px;padding:6px 10px;border:1px solid var(--bdr);border-radius:8px;background:var(--wh);color:var(--dark);font-family:var(--font-s);}
+.section-label{font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);font-weight:600;}
+.table-wrap{border-radius:10px;border:1px solid var(--bdr);background:var(--wh);overflow:hidden;}
+table{width:100%;border-collapse:collapse;min-width:1050px;}
+.table-scroll{overflow-x:auto;}
+thead th{background:var(--dark);color:#fff;padding:9px 10px;text-align:left;font-size:9.5px;letter-spacing:.06em;text-transform:uppercase;font-weight:600;white-space:nowrap;}
+tbody tr{border-bottom:1px solid var(--bdr);}
+tbody tr:last-child{border-bottom:none;}
+tbody tr:hover{background:#fdf8f0;}
+tbody tr.irow{background:#fffdf9;}
+tbody tr.irow:hover{background:#fdf5e6;}
+td{padding:8px 10px;vertical-align:middle;}
+.p-badge{font-size:10px;font-weight:700;padding:2px 6px;border-radius:8px;background:#fff3e0;color:var(--or);border:1px solid #ffd180;}
+.mktags{display:flex;flex-wrap:wrap;gap:3px;}
+.mktag{font-size:10px;padding:1px 5px;border-radius:4px;background:var(--card);color:var(--dark);}
+.tteam{font-size:10px;padding:2px 7px;border-radius:10px;background:#e8eaf6;color:#3949ab;}
+.cattag{font-size:10px;padding:2px 7px;border-radius:10px;background:#e8f5e9;color:#2e7d32;}
+.action-btn{background:none;border:none;cursor:pointer;color:var(--muted);font-size:12px;padding:3px 6px;border-radius:4px;font-family:var(--font-s);}
+.action-btn:hover{background:var(--card);color:var(--dark);}
+.action-btn.del:hover{color:#c62828;background:#fce8e6;}
+.exp-btn{background:none;border:none;cursor:pointer;color:var(--muted);font-size:11px;margin-right:4px;width:16px;}
+.imp-yes{font-size:11px;font-weight:600;color:#2e7d32;}
+.imp-no{font-size:11px;color:var(--muted);}
+.imp-pend{font-size:11px;color:#e65100;}
+.empty{text-align:center;padding:40px;color:var(--muted);}
+.overlay{display:none;position:fixed;inset:0;background:rgba(61,55,48,.45);z-index:100;align-items:center;justify-content:center;}
+.overlay.open{display:flex;}
+.modal{background:var(--wh);border-radius:16px;padding:24px;width:720px;max-width:95vw;max-height:90vh;overflow-y:auto;border:1px solid var(--bdr);}
+.modal h2{font-family:var(--font-serif);font-size:19px;font-weight:400;color:var(--dark);margin-bottom:18px;}
+.modal h3{font-size:11px;font-weight:600;color:var(--or);text-transform:uppercase;letter-spacing:.08em;margin:18px 0 10px;border-top:1px solid var(--bdr);padding-top:14px;}
+.fgrid{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
+.fg{display:flex;flex-direction:column;gap:4px;}
+.fg.full{grid-column:1/-1;}
+.fg label{font-size:10px;font-weight:600;color:var(--muted);letter-spacing:.06em;text-transform:uppercase;}
+.fg input,.fg select,.fg textarea{font-size:13px;padding:8px 10px;border:1px solid var(--bdr);border-radius:8px;background:var(--bg);color:var(--dark);font-family:var(--font-s);}
+.fg textarea{resize:vertical;min-height:65px;}
+.ms-wrap{position:relative;}
+.ms-box{font-size:13px;padding:7px 10px;border:1px solid var(--bdr);border-radius:8px;background:var(--bg);color:var(--dark);cursor:pointer;min-height:38px;display:flex;flex-wrap:wrap;gap:4px;align-items:center;}
+.ms-dd{display:none;position:absolute;top:100%;left:0;right:0;background:var(--wh);border:1px solid var(--bdr);border-radius:8px;z-index:200;max-height:200px;overflow-y:auto;box-shadow:0 4px 16px rgba(0,0,0,.1);}
+.ms-dd.open{display:block;}
+.ms-opt{padding:6px 12px;cursor:pointer;display:flex;align-items:center;gap:8px;color:var(--dark);font-size:13px;}
+.ms-opt:hover{background:var(--card);}
+.ms-opt input{accent-color:var(--or);}
+.ms-select-all{padding:7px 12px;font-size:12px;font-weight:600;color:var(--or);cursor:pointer;border-bottom:1px solid var(--bdr);display:flex;align-items:center;gap:8px;}
+.ms-select-all:hover{background:#fff3e0;}
+.chip{font-size:10px;background:#fff3e0;color:var(--or);border:1px solid #ffd180;border-radius:10px;padding:1px 7px;white-space:nowrap;}
+.ins-entry{background:var(--card);border-radius:10px;padding:12px;margin-bottom:8px;position:relative;}
+.ins-entry label{font-size:10px;font-weight:600;color:var(--muted);letter-spacing:.06em;text-transform:uppercase;display:block;margin-bottom:4px;}
+.ins-entry textarea{width:100%;font-size:13px;padding:7px 10px;border:1px solid var(--bdr);border-radius:8px;background:var(--wh);color:var(--dark);font-family:var(--font-s);resize:vertical;min-height:55px;}
+.ins-row{display:flex;gap:12px;margin-top:8px;align-items:center;flex-wrap:wrap;}
+.ins-entry select{font-size:12px;padding:5px 8px;border:1px solid var(--bdr);border-radius:7px;background:var(--wh);color:var(--dark);font-family:var(--font-s);}
+.rm-ins{position:absolute;top:8px;right:8px;background:none;border:none;cursor:pointer;color:var(--muted);font-size:13px;}
+.rm-ins:hover{color:#c62828;}
+.add-ins-modal{font-size:12px;color:var(--or);background:none;border:1px dashed var(--or);border-radius:8px;padding:6px 14px;cursor:pointer;font-family:var(--font-s);margin-top:4px;}
+.modal-acts{display:flex;gap:10px;margin-top:20px;justify-content:flex-end;}
+.btn-cancel{background:none;border:1px solid var(--bdr);border-radius:20px;padding:8px 18px;font-size:13px;cursor:pointer;font-family:var(--font-s);color:var(--dark);}
+.btn-save{background:var(--or);color:#fff;border:none;border-radius:20px;padding:8px 20px;font-size:13px;font-weight:600;cursor:pointer;font-family:var(--font-s);}
+.btn-save:hover{background:#e07800;}
+</style>
+
+<div class="page">
+  <div class="topbar">
+    <div class="logo">emma. <em>CIX Insights Tracker · 2026</em></div>
+    <button class="add-btn" onclick="openAdd()">+ Add research</button>
+  </div>
+  <div class="top-row">
+    <div class="kpi-card">
+      <div class="kpi-eyebrow">KPI 1 · Quarterly</div>
+      <div class="kpi-name">Insight-to-Action Turnaround<br><span style="font-size:10px;font-weight:400;color:var(--muted);">recommendations tested / implemented</span></div>
+      <div class="kpi-big" id="k1-total">0</div>
+      <div class="kpi-detail">total this year</div>
+      <div class="q-grid" id="k1-quarters"></div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-eyebrow">KPI 2 · End of Year</div>
+      <div class="kpi-name">Insights Effectiveness<br><span style="font-size:10px;font-weight:400;color:var(--muted);">% of all logged insights that generated impact</span></div>
+      <div class="kpi-big" id="k2-pct">—</div>
+      <div class="kpi-detail" id="k2-detail">no insights logged yet</div>
+      <div id="k2-badge" class="badge badge-na">Target: &gt;70% EoY</div>
+      <div style="margin-top:auto;padding-top:16px;">
+        <div style="background:var(--card);border-radius:6px;height:8px;overflow:hidden;">
+          <div class="progress-fill" id="k2-bar" style="width:0%"></div>
+        </div>
+        <div style="font-size:10px;color:var(--muted);margin-top:6px;" id="k2-sub"></div>
+      </div>
+    </div>
+    <div class="chart-card">
+      <div class="chart-title">Markets coverage</div>
+      <div class="chart-canvas-wrap"><canvas id="chart-markets" role="img" aria-label="Markets distribution"></canvas></div>
+      <div class="chart-legend" id="legend-markets"></div>
+    </div>
+    <div class="chart-card">
+      <div class="chart-title">Teams reached</div>
+      <div class="chart-canvas-wrap"><canvas id="chart-teams" role="img" aria-label="Teams distribution"></canvas></div>
+      <div class="chart-legend" id="legend-teams"></div>
+    </div>
+  </div>
+
+  <div class="table-bar">
+    <span class="section-label">Research studies</span>
+    <select id="fq" onchange="renderTable()">
+      <option value="">All quarters</option>
+      <option>Q1</option><option>Q2</option><option>Q3</option><option>Q4</option>
+    </select>
+    <select id="ft" onchange="renderTable()">
+      <option value="">All teams</option>
+      <option>Tech</option><option>Ecomm</option><option>Ops</option><option>Marketing</option><option>Markets</option><option>B&CX</option><option>Category Management</option><option>R&D</option><option>Engineering</option><option>CE</option><option>Brand</option><option>Creative</option><option>Paid Social</option><option>Paid Search</option><option>Influencer Marketing</option><option>CRM</option><option>CRO</option>
+    </select>
+    <select id="fc" onchange="renderTable()">
+      <option value="">All categories</option>
+      <option>Mattress</option><option>Pillow</option><option>Topper</option><option>Bed</option><option>Bed Linen</option>
+    </select>
+    <select id="fp" onchange="renderTable()">
+      <option value="">All POCs</option>
+      <option>Paula</option><option>Joana</option><option>Egon</option><option>Sofija</option><option>Michelle</option><option>Gabriela</option><option>Team Swap</option>
+    </select>
+  </div>
+  <div class="table-scroll"><div class="table-wrap">
+    <table>
+      <thead><tr>
+        <th style="width:24px;"></th>
+        <th>ID</th><th>Research name</th><th>Project</th><th>P</th>
+        <th>Team</th><th>Categories</th><th>Fieldwork</th><th>Markets</th><th>POC</th>
+        <th>Insights</th><th>Implemented</th><th style="width:80px;"></th>
+      </tr></thead>
+      <tbody id="tbody"></tbody>
+    </table>
+  </div></div>
+</div>
+
+<div class="overlay" id="modal-overlay">
+<div class="modal">
+  <h2 id="modal-title">Add research study</h2>
+  <div class="fgrid">
+    <div class="fg full"><label>Research name</label><input id="f-name" type="text" placeholder="e.g. Quality Perception — DE/FR"></div>
+    <div class="fg full"><label>Project (free text)</label><input id="f-project" type="text" placeholder="e.g. Increasing Brand Preference"></div>
+    <div class="fg"><label>P-tag</label>
+      <select id="f-ptag"><option value="">None</option><option>P1</option><option>P2</option><option>P3</option></select>
+    </div>
+    <div class="fg"><label>Fieldwork start</label><input id="f-start" type="month"></div>
+    <div class="fg"><label>Fieldwork end</label><input id="f-end" type="month"></div>
+    <div class="fg">
+      <label>Team</label>
+      <div class="ms-wrap"><div class="ms-box" id="ms-team-box" onclick="toggleMs('team')"><span style="color:var(--muted);">Select teams…</span></div>
+      <div class="ms-dd" id="ms-team-dd"></div></div>
+    </div>
+    <div class="fg">
+      <label>Categories</label>
+      <div class="ms-wrap"><div class="ms-box" id="ms-cat-box" onclick="toggleMs('cat')"><span style="color:var(--muted);">Select categories…</span></div>
+      <div class="ms-dd" id="ms-cat-dd"></div></div>
+    </div>
+    <div class="fg full">
+      <label>Markets</label>
+      <div class="ms-wrap"><div class="ms-box" id="ms-mkt-box" onclick="toggleMs('mkt')"><span style="color:var(--muted);">Select markets…</span></div>
+      <div class="ms-dd" id="ms-mkt-dd"></div></div>
+    </div>
+    <div class="fg">
+      <label>POC</label>
+      <div class="ms-wrap"><div class="ms-box" id="ms-poc-box" onclick="toggleMs('poc')"><span style="color:var(--muted);">Select POC…</span></div>
+      <div class="ms-dd" id="ms-poc-dd"></div></div>
+    </div>
+  </div>
+  <h3>Insights from this study</h3>
+  <div id="ins-container"></div>
+  <button class="add-ins-modal" onclick="addInsEntry()">+ Add insight</button>
+  <div class="modal-acts">
+    <button class="btn-cancel" onclick="closeModal()">Cancel</button>
+    <button class="btn-save" onclick="saveStudy()">Save study</button>
+  </div>
+</div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+<script>
+const MARKETS=['PT','ES','FR','CH','BE','UK','DE','AT','IT','IR','IN','NL','PH','JP','HK','KO','AU','CA','CO','MX','BR','CL'];
+const TEAMS=['Tech','Ecomm','Ops','Marketing','Markets','B&CX','Category Management','R&D','Engineering','CE','Brand','Creative','Paid Social','Paid Search','Influencer Marketing','CRM','CRO'];
+const CATS=['Mattress','Pillow','Topper','Bed','Bed Linen'];
+const POCS=['Paula','Joana','Egon','Sofija','Michelle','Gabriela','Team Swap'];
+const QMAP={Q1:['2026-01','2026-02','2026-03'],Q2:['2026-04','2026-05','2026-06'],Q3:['2026-07','2026-08','2026-09'],Q4:['2026-10','2026-11','2026-12']};
+const PIE_COLORS=['#FF8900','#3D3730','#D8C8A4','#8A7E74','#FFDDBF','#b0a090','#e8a060','#c87030','#a05020','#705030','#504030','#303020','#208060','#406080','#804060','#608040','#408090'];
+
+let studies=[],editId=null,msState={mkt:[],team:[],poc:[],cat:[]},expanded=new Set(),iCount=0,chartM=null,chartT=null;
+
+function qOf(s){const m=s.start||s.end;if(!m)return null;for(const[q,ms]of Object.entries(QMAP))if(ms.includes(m))return q;return null;}
+
+async function load(){
+  try{const r=await window.storage.get('cix4_studies');if(r&&r.value){studies=JSON.parse(r.value);return;}}catch(e){}
+  try{const l=localStorage.getItem('cix4_studies');if(l){studies=JSON.parse(l);return;}}catch(e){}
+}
+function save(){
+  const j=JSON.stringify(studies);
+  try{window.storage.set('cix4_studies',j);}catch(e){}
+  try{localStorage.setItem('cix4_studies',j);}catch(e){}
+}
+function genId(){return`CIX-2026-${String(studies.length+1).padStart(3,'0')}`;}
+
+function buildMs(key,opts,hasSelectAll){
+  const dd=document.getElementById(`ms-${key}-dd`);
+  let html=hasSelectAll?`<div class="ms-select-all" onclick="selectAll('${key}')">☑ Select all</div>`:'';
+  html+=opts.map(o=>`<label class="ms-opt"><input type="checkbox" value="${o}" onchange="toggleOpt('${key}','${o}')"> ${o}</label>`).join('');
+  dd.innerHTML=html;
+}
+function selectAll(key){
+  const opts=key==='mkt'?MARKETS:key==='cat'?CATS:[];
+  const all=msState[key].length===opts.length;
+  msState[key]=all?[]:[...opts];
+  document.getElementById(`ms-${key}-dd`).querySelectorAll('input[type=checkbox]').forEach(cb=>{cb.checked=!all;});
+  renderChips(key);
+}
+function toggleMs(key){
+  document.querySelectorAll('.ms-dd').forEach(d=>{if(d.id!==`ms-${key}-dd`)d.classList.remove('open');});
+  document.getElementById(`ms-${key}-dd`).classList.toggle('open');
+}
+document.addEventListener('click',e=>{if(!e.target.closest('.ms-wrap'))document.querySelectorAll('.ms-dd').forEach(d=>d.classList.remove('open'));});
+function toggleOpt(key,val){const a=msState[key];const i=a.indexOf(val);i>-1?a.splice(i,1):a.push(val);renderChips(key);}
+function renderChips(key){
+  const box=document.getElementById(`ms-${key}-box`);
+  if(!msState[key].length){box.innerHTML=`<span style="color:var(--muted);">Select…</span>`;return;}
+  const allOpts=key==='mkt'?MARKETS:key==='cat'?CATS:null;
+  if(allOpts&&msState[key].length===allOpts.length){box.innerHTML=`<span class="chip">All (${allOpts.length})</span>`;return;}
+  box.innerHTML=msState[key].map(v=>`<span class="chip">${v}</span>`).join('');
+}
+function setMs(key,vals){
+  msState[key]=[...vals];
+  document.getElementById(`ms-${key}-dd`).querySelectorAll('input[type=checkbox]').forEach(cb=>{cb.checked=vals.includes(cb.value);});
+  renderChips(key);
+}
+
+function addInsEntry(data){
+  const id=iCount++;const d=data||{};
+  const el=document.createElement('div');el.className='ins-entry';
+  el.innerHTML=`
+    <button class="rm-ins" onclick="this.parentElement.remove()">✕</button>
+    <label>Insight / recommendation</label>
+    <textarea data-f="desc" placeholder="Describe the recommendation or insight…">${d.desc||''}</textarea>
+    <div class="ins-row">
+      <label style="display:flex;align-items:center;gap:5px;text-transform:none;letter-spacing:0;font-size:12px;font-weight:500;color:var(--dark);">
+        <input type="checkbox" data-f="impl" ${d.impl?'checked':''} style="accent-color:var(--or);" onchange="toggleEval(this,${id})">
+        Tested / implemented
+      </label>
+      <span id="eval-${id}" style="opacity:${d.impl?1:.35};pointer-events:${d.impl?'auto':'none'};display:flex;align-items:center;gap:10px;">
+        <label style="display:flex;align-items:center;gap:5px;text-transform:none;letter-spacing:0;font-size:12px;font-weight:500;color:var(--dark);">
+          <input type="checkbox" data-f="ready" ${d.ready?'checked':''} style="accent-color:var(--or);" onchange="toggleImpact(this,${id})">
+          Ready to evaluate
+        </label>
+        <span id="impact-${id}" style="opacity:${d.ready?1:.35};pointer-events:${d.ready?'auto':'none'};">
+          <select data-f="impact">
+            <option value="">Impact?</option>
+            <option value="yes" ${d.impact==='yes'?'selected':''}>Yes — generated impact</option>
+            <option value="no" ${d.impact==='no'?'selected':''}>No impact</option>
+          </select>
+        </span>
+      </span>
+    </div>`;
+  document.getElementById('ins-container').appendChild(el);
+}
+function toggleEval(cb,id){const s=document.getElementById('eval-'+id);s.style.opacity=cb.checked?'1':'.35';s.style.pointerEvents=cb.checked?'auto':'none';}
+function toggleImpact(cb,id){const s=document.getElementById('impact-'+id);s.style.opacity=cb.checked?'1':'.35';s.style.pointerEvents=cb.checked?'auto':'none';}
+
+function openAdd(){
+  editId=null;
+  document.getElementById('modal-title').textContent='Add research study';
+  ['f-name','f-project','f-start','f-end'].forEach(id=>document.getElementById(id).value='');
+  document.getElementById('f-ptag').value='';
+  msState={mkt:[],team:[],poc:[],cat:[]};
+  buildMs('mkt',MARKETS,true);buildMs('team',TEAMS,false);buildMs('poc',POCS,false);buildMs('cat',CATS,false);
+  renderChips('mkt');renderChips('team');renderChips('poc');renderChips('cat');
+  document.getElementById('ins-container').innerHTML='';iCount=0;
+  document.getElementById('modal-overlay').classList.add('open');
+}
+function openEdit(id){
+  const s=studies.find(x=>x.id===id);if(!s)return;
+  editId=id;
+  document.getElementById('modal-title').textContent='Edit research study';
+  document.getElementById('f-name').value=s.name;
+  document.getElementById('f-project').value=s.project||'';
+  document.getElementById('f-ptag').value=s.ptag||'';
+  document.getElementById('f-start').value=s.start||'';
+  document.getElementById('f-end').value=s.end||'';
+  msState={mkt:[...(s.markets||[])],team:[...(s.teams||[])],poc:[...(s.pocs||[])],cat:[...(s.categories||[])]};
+  buildMs('mkt',MARKETS,true);buildMs('team',TEAMS,false);buildMs('poc',POCS,false);buildMs('cat',CATS,false);
+  setMs('mkt',s.markets||[]);setMs('team',s.teams||[]);setMs('poc',s.pocs||[]);setMs('cat',s.categories||[]);
+  document.getElementById('ins-container').innerHTML='';iCount=0;
+  (s.insights||[]).forEach(i=>addInsEntry(i));
+  document.getElementById('modal-overlay').classList.add('open');
+}
+function closeModal(){document.getElementById('modal-overlay').classList.remove('open');}
+
+function saveStudy(){
+  const name=document.getElementById('f-name').value.trim();
+  if(!name){alert('Research name is required.');return;}
+  const insights=[];
+  document.querySelectorAll('#ins-container .ins-entry').forEach(el=>{
+    const desc=el.querySelector('[data-f="desc"]').value.trim();if(!desc)return;
+    insights.push({desc,impl:el.querySelector('[data-f="impl"]').checked,ready:el.querySelector('[data-f="ready"]').checked,impact:el.querySelector('[data-f="impact"]').value});
+  });
+  const obj={id:editId||genId(),name,project:document.getElementById('f-project').value.trim(),ptag:document.getElementById('f-ptag').value,teams:[...msState.team],categories:[...msState.cat],markets:[...msState.mkt],pocs:[...msState.poc],start:document.getElementById('f-start').value,end:document.getElementById('f-end').value,insights};
+  if(editId){const i=studies.findIndex(x=>x.id===editId);studies[i]=obj;}else studies.push(obj);
+  save();closeModal();renderAll();
+}
+function delStudy(id){if(!confirm('Delete this study?'))return;studies=studies.filter(x=>x.id!==id);save();renderAll();}
+function toggleExp(id){expanded.has(id)?expanded.delete(id):expanded.add(id);renderTable();}
+
+function renderTable(){
+  const qf=document.getElementById('fq').value,tf=document.getElementById('ft').value,pf=document.getElementById('fp').value,cf=document.getElementById('fc').value;
+  const filtered=studies.filter(s=>{
+    if(qf&&qOf(s)!==qf)return false;
+    if(tf&&!(s.teams||[]).includes(tf))return false;
+    if(pf&&!(s.pocs||[]).includes(pf))return false;
+    if(cf&&!(s.categories||[]).includes(cf))return false;
+    return true;
+  });
+  const tbody=document.getElementById('tbody');
+  if(!filtered.length){tbody.innerHTML=`<tr><td colspan="13"><div class="empty">No studies yet. Click <strong>+ Add research</strong> to get started.</div></td></tr>`;return;}
+  let html='';
+  filtered.forEach(s=>{
+    const q=qOf(s),ins=s.insights||[],implCount=ins.filter(i=>i.impl).length;
+    const mk=(s.markets||[]).slice(0,4),mMore=(s.markets||[]).length-4,exp=expanded.has(s.id);
+    const cats=s.categories||[];
+    html+=`<tr>
+      <td><button class="exp-btn" onclick="toggleExp('${s.id}')">${exp?'▾':'▸'}</button></td>
+      <td style="font-size:11px;color:var(--muted);white-space:nowrap;">${s.id}</td>
+      <td style="font-weight:600;max-width:150px;">${s.name}</td>
+      <td style="max-width:130px;color:var(--muted);font-size:12px;">${s.project||'—'}</td>
+      <td>${s.ptag?`<span class="p-badge">${s.ptag}</span>`:'—'}</td>
+      <td>${(s.teams||[]).map(t=>`<span class="tteam">${t}</span>`).join(' ')}</td>
+      <td>${cats.length?cats.map(c=>`<span class="cattag">${c}</span>`).join(' '):'—'}</td>
+      <td style="white-space:nowrap;font-size:12px;">${s.start||'?'} → ${s.end||'?'}${q?`<br><span style="font-size:9px;color:var(--or);font-weight:700;">${q}</span>`:''}</td>
+      <td><div class="mktags">${mk.map(m=>`<span class="mktag">${m}</span>`).join('')}${mMore>0?`<span class="mktag">+${mMore}</span>`:''}</div></td>
+      <td style="font-weight:600;font-size:12px;">${(s.pocs||[]).join(', ')||'—'}</td>
+      <td style="text-align:center;"><strong>${ins.length}</strong></td>
+      <td style="text-align:center;"><strong>${implCount}</strong><span style="color:var(--muted);font-size:11px;"> / ${ins.length}</span></td>
+      <td style="white-space:nowrap;">
+        <button class="action-btn" onclick="openEdit('${s.id}')">✎ Edit</button>
+        <button class="action-btn del" onclick="delStudy('${s.id}')">✕</button>
+      </td>
+    </tr>`;
+    if(exp&&ins.length){ins.forEach((ins,i)=>{
+      let st=!ins.impl?'<span class="imp-no">Not yet tested</span>':!ins.ready?'<span class="imp-pend">Not yet evaluated</span>':ins.impact==='yes'?'<span class="imp-yes">✓ Generated impact</span>':ins.impact==='no'?'<span class="imp-no">No impact</span>':'<span class="imp-pend">Pending evaluation</span>';
+      html+=`<tr class="irow"><td></td><td></td><td colspan="10" style="padding-left:28px;font-size:12px;font-style:italic;">Insight ${i+1}: ${ins.desc} <span style="margin-left:8px;">${st}</span></td><td></td></tr>`;
+    });}
+  });
+  tbody.innerHTML=html;
+}
+
+function renderKPIs(){
+  const allIns=studies.flatMap(s=>(s.insights||[]).map(i=>({...i,q:qOf(s)})));
+  const impl=allIns.filter(i=>i.impl);
+  document.getElementById('k1-total').textContent=impl.length;
+  document.getElementById('k1-quarters').innerHTML=['Q1','Q2','Q3','Q4'].map(q=>{
+    const c=impl.filter(i=>i.q===q).length;
+    const badge=c===0?`<span class="q-badge" style="background:#f1f1f1;color:#888;">—</span>`:c>10?`<span class="q-badge badge-hit">✓ Hit</span>`:`<span class="q-badge badge-miss">${10-c} to go</span>`;
+    return`<div class="q-box"><div class="q-label">${q}</div><div class="q-val">${c}</div><div style="font-size:9px;color:var(--muted);">&gt;10</div>${badge}</div>`;
+  }).join('');
+  const total=allIns.length,yes=allIns.filter(i=>i.impact==='yes').length,unevaluated=allIns.filter(i=>!i.impact||i.impact==='').length;
+  const pct=total>0?Math.round(yes/total*100):null;
+  if(pct===null){
+    document.getElementById('k2-pct').textContent='—';
+    document.getElementById('k2-bar').style.width='0%';
+    document.getElementById('k2-badge').className='badge badge-na';
+    document.getElementById('k2-badge').textContent='Target: >70% EoY';
+    document.getElementById('k2-detail').textContent='no insights logged yet';
+    document.getElementById('k2-sub').textContent='';
+  }else{
+    document.getElementById('k2-pct').textContent=pct+'%';
+    document.getElementById('k2-bar').style.width=Math.min(pct,100)+'%';
+    document.getElementById('k2-bar').className='progress-fill '+(pct>=70?'green':pct>=50?'':'red');
+    document.getElementById('k2-badge').className='badge '+(pct>=70?'badge-hit':'badge-miss');
+    document.getElementById('k2-badge').textContent=pct>=70?`✓ On track — ${pct}% vs 70% target`:`✗ ${70-pct}pp below target`;
+    document.getElementById('k2-detail').textContent=`${yes} of ${total} insights generated impact`;
+    document.getElementById('k2-sub').textContent=unevaluated>0?`${unevaluated} insight${unevaluated>1?'s':''} not yet evaluated`:'';
+  }
+}
+
+function renderCharts(){
+  const mktC={},teamC={};
+  studies.forEach(s=>{(s.markets||[]).forEach(m=>mktC[m]=(mktC[m]||0)+1);(s.teams||[]).forEach(t=>teamC[t]=(teamC[t]||0)+1);});
+  const mkK=Object.keys(mktC).sort((a,b)=>mktC[b]-mktC[a]);
+  const tkK=Object.keys(teamC).sort((a,b)=>teamC[b]-teamC[a]);
+  const opts={responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false},tooltip:{callbacks:{label:ctx=>` ${ctx.label}: ${ctx.raw}`}}}};
+  const empty={labels:['No data'],datasets:[{data:[1],backgroundColor:['#EDE8E0'],borderWidth:0}]};
+  if(chartM)chartM.destroy();
+  chartM=new Chart(document.getElementById('chart-markets'),{type:'doughnut',data:mkK.length?{labels:mkK,datasets:[{data:mkK.map(k=>mktC[k]),backgroundColor:mkK.map((_,i)=>PIE_COLORS[i%PIE_COLORS.length]),borderWidth:1,borderColor:'#FAF4E8'}]}:empty,options:opts});
+  if(chartT)chartT.destroy();
+  chartT=new Chart(document.getElementById('chart-teams'),{type:'doughnut',data:tkK.length?{labels:tkK,datasets:[{data:tkK.map(k=>teamC[k]),backgroundColor:tkK.map((_,i)=>PIE_COLORS[i%PIE_COLORS.length]),borderWidth:1,borderColor:'#FAF4E8'}]}:empty,options:opts});
+  document.getElementById('legend-markets').innerHTML=mkK.length?mkK.map((k,i)=>`<span style="display:flex;align-items:center;gap:3px;font-size:10px;"><span style="width:8px;height:8px;border-radius:50%;background:${PIE_COLORS[i%PIE_COLORS.length]};display:inline-block;flex-shrink:0;"></span>${k} <span style="color:var(--muted);">(${mktC[k]})</span></span>`).join(''):'<span style="font-size:11px;color:var(--muted);">No data yet</span>';
+  document.getElementById('legend-teams').innerHTML=tkK.length?tkK.map((k,i)=>`<span style="display:flex;align-items:center;gap:3px;font-size:10px;"><span style="width:8px;height:8px;border-radius:50%;background:${PIE_COLORS[i%PIE_COLORS.length]};display:inline-block;flex-shrink:0;"></span>${k} <span style="color:var(--muted);">(${teamC[k]})</span></span>`).join(''):'<span style="font-size:11px;color:var(--muted);">No data yet</span>';
+}
+
+function renderAll(){renderKPIs();renderCharts();renderTable();}
+
+(async()=>{
+  buildMs('mkt',MARKETS,true);buildMs('team',TEAMS,false);buildMs('poc',POCS,false);buildMs('cat',CATS,false);
+  await load();renderAll();
+})();
+</script>
