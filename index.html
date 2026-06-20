@@ -1,4 +1,9 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>emma. CIX Insights Tracker 2026</title>
 <style>
 *{box-sizing:border-box;margin:0;padding:0;}
 :root{
@@ -10,8 +15,15 @@ body{font-family:var(--font-s);background:var(--bg);color:var(--dark);font-size:
 .topbar{display:flex;align-items:center;justify-content:space-between;margin-bottom:20px;}
 .logo{font-family:var(--font-serif);font-size:20px;color:var(--or);font-weight:400;}
 .logo em{font-style:normal;font-size:12px;font-family:var(--font-s);color:var(--muted);margin-left:10px;letter-spacing:.08em;}
+.topbar-right{display:flex;align-items:center;gap:10px;}
 .add-btn{background:var(--or);color:#fff;border:none;border-radius:20px;padding:9px 18px;font-size:13px;font-weight:600;cursor:pointer;display:flex;align-items:center;gap:6px;font-family:var(--font-s);}
 .add-btn:hover{background:#e07800;}
+.sync-btn{background:none;border:1px solid var(--bdr);border-radius:20px;padding:8px 14px;font-size:12px;cursor:pointer;font-family:var(--font-s);color:var(--muted);display:flex;align-items:center;gap:5px;}
+.sync-btn:hover{background:var(--card);color:var(--dark);}
+.sync-status{font-size:11px;color:var(--muted);}
+.sync-status.ok{color:#2e7d32;}
+.sync-status.err{color:#c62828;}
+.sync-status.saving{color:var(--or);}
 .top-row{display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:16px;margin-bottom:16px;align-items:stretch;}
 .kpi-card,.chart-card{background:var(--wh);border:1px solid var(--bdr);border-radius:14px;padding:20px;display:flex;flex-direction:column;}
 .kpi-eyebrow{font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:4px;}
@@ -93,12 +105,26 @@ td{padding:8px 10px;vertical-align:middle;}
 .btn-cancel{background:none;border:1px solid var(--bdr);border-radius:20px;padding:8px 18px;font-size:13px;cursor:pointer;font-family:var(--font-s);color:var(--dark);}
 .btn-save{background:var(--or);color:#fff;border:none;border-radius:20px;padding:8px 20px;font-size:13px;font-weight:600;cursor:pointer;font-family:var(--font-s);}
 .btn-save:hover{background:#e07800;}
+/* Token modal */
+.token-modal{background:var(--wh);border-radius:16px;padding:28px;width:480px;max-width:95vw;border:1px solid var(--bdr);}
+.token-modal h2{font-family:var(--font-serif);font-size:18px;font-weight:400;color:var(--dark);margin-bottom:8px;}
+.token-modal p{font-size:12px;color:var(--muted);line-height:1.6;margin-bottom:16px;}
+.token-modal input{width:100%;font-size:13px;padding:9px 12px;border:1px solid var(--bdr);border-radius:8px;background:var(--bg);color:var(--dark);font-family:var(--font-s);margin-bottom:12px;}
+.token-note{font-size:11px;color:var(--muted);margin-top:8px;line-height:1.5;}
+.loading-bar{text-align:center;padding:60px;color:var(--muted);font-size:13px;}
 </style>
+</head>
+<body>
 
 <div class="page">
   <div class="topbar">
     <div class="logo">emma. <em>CIX Insights Tracker · 2026</em></div>
-    <button class="add-btn" onclick="openAdd()">+ Add research</button>
+    <div class="topbar-right">
+      <span class="sync-status" id="sync-status">Loading…</span>
+      <button class="sync-btn" onclick="manualSync()" title="Refresh data from GitHub">↻ Refresh</button>
+      <button class="sync-btn" onclick="openTokenModal()" title="GitHub settings">⚙ GitHub</button>
+      <button class="add-btn" onclick="openAdd()">+ Add research</button>
+    </div>
   </div>
   <div class="top-row">
     <div class="kpi-card">
@@ -160,11 +186,12 @@ td{padding:8px 10px;vertical-align:middle;}
         <th>Team</th><th>Categories</th><th>Fieldwork</th><th>Markets</th><th>POC</th>
         <th>Insights</th><th>Implemented</th><th style="width:80px;"></th>
       </tr></thead>
-      <tbody id="tbody"></tbody>
+      <tbody id="tbody"><tr><td colspan="13"><div class="loading-bar">Loading data from GitHub…</div></td></tr></tbody>
     </table>
   </div></div>
 </div>
 
+<!-- Study modal -->
 <div class="overlay" id="modal-overlay">
 <div class="modal">
   <h2 id="modal-title">Add research study</h2>
@@ -207,8 +234,30 @@ td{padding:8px 10px;vertical-align:middle;}
 </div>
 </div>
 
+<!-- GitHub token modal -->
+<div class="overlay" id="token-overlay">
+<div class="token-modal">
+  <h2>GitHub connection</h2>
+  <p>To save changes, you need a GitHub personal access token. This is stored only in your browser and never shared. Visitors without a token can still view all data.</p>
+  <input type="password" id="token-input" placeholder="ghp_xxxxxxxxxxxxxxxxxxxx">
+  <div style="display:flex;gap:10px;justify-content:flex-end;">
+    <button class="btn-cancel" onclick="closeTokenModal()">Cancel</button>
+    <button class="btn-save" onclick="saveToken()">Save token</button>
+  </div>
+  <p class="token-note">To create a token: github.com → Profile → Settings → Developer settings → Personal access tokens → Tokens (classic) → Generate new token. Tick the <strong>repo</strong> checkbox. Set expiry to 1 year.</p>
+  <p class="token-note" style="margin-top:8px;" id="token-clear-wrap"></p>
+</div>
+</div>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
 <script>
+// ── CONFIG — update these two lines after creating your data file on GitHub ──
+const GITHUB_USER = 'paularussoemma';
+const GITHUB_REPO = 'CIX-Insights-Tracker';
+const GITHUB_FILE = 'data.json';
+const GITHUB_BRANCH = 'main';
+// ─────────────────────────────────────────────────────────────────────────────
+
 const MARKETS=['PT','ES','FR','CH','BE','UK','DE','AT','IT','IR','IN','NL','PH','JP','HK','KO','AU','CA','CO','MX','BR','CL'];
 const TEAMS=['Tech','Ecomm','Ops','Marketing','Markets','B&CX','Category Management','R&D','Engineering','CE','Brand','Creative','Paid Social','Paid Search','Influencer Marketing','CRM','CRO'];
 const CATS=['Mattress','Pillow','Topper','Bed','Bed Linen'];
@@ -217,20 +266,82 @@ const QMAP={Q1:['2026-01','2026-02','2026-03'],Q2:['2026-04','2026-05','2026-06'
 const PIE_COLORS=['#FF8900','#3D3730','#D8C8A4','#8A7E74','#FFDDBF','#b0a090','#e8a060','#c87030','#a05020','#705030','#504030','#303020','#208060','#406080','#804060','#608040','#408090'];
 
 let studies=[],editId=null,msState={mkt:[],team:[],poc:[],cat:[]},expanded=new Set(),iCount=0,chartM=null,chartT=null;
+let fileSha=null;
 
-function qOf(s){const m=s.start||s.end;if(!m)return null;for(const[q,ms]of Object.entries(QMAP))if(ms.includes(m))return q;return null;}
+// ── GitHub helpers ────────────────────────────────────────────────────────────
+function getToken(){return localStorage.getItem('cix_gh_token')||'';}
+function setStatus(msg,cls){const el=document.getElementById('sync-status');el.textContent=msg;el.className='sync-status'+(cls?' '+cls:'');}
+
+async function fetchFromGitHub(){
+  const url=`https://api.github.com/repos/${GITHUB_USER}/${GITHUB_REPO}/contents/${GITHUB_FILE}?ref=${GITHUB_BRANCH}&t=${Date.now()}`;
+  const headers={'Accept':'application/vnd.github+json'};
+  const token=getToken();if(token)headers['Authorization']=`Bearer ${token}`;
+  const r=await fetch(url,{headers});
+  if(r.status===404){fileSha=null;return[];}
+  if(!r.ok)throw new Error(`GitHub ${r.status}`);
+  const j=await r.json();
+  fileSha=j.sha;
+  return JSON.parse(atob(j.content.replace(/\n/g,'')));
+}
+
+async function saveToGitHub(data){
+  const token=getToken();
+  if(!token){openTokenModal();return false;}
+  const url=`https://api.github.com/repos/${GITHUB_USER}/${GITHUB_REPO}/contents/${GITHUB_FILE}`;
+  const body={message:'CIX tracker update',content:btoa(unescape(encodeURIComponent(JSON.stringify(data,null,2)))),branch:GITHUB_BRANCH};
+  if(fileSha)body.sha=fileSha;
+  setStatus('Saving…','saving');
+  const r=await fetch(url,{method:'PUT',headers:{'Accept':'application/vnd.github+json','Authorization':`Bearer ${token}`,'Content-Type':'application/json'},body:JSON.stringify(body)});
+  if(!r.ok){const e=await r.json();throw new Error(e.message||`GitHub ${r.status}`);}
+  const j=await r.json();fileSha=j.content.sha;
+  return true;
+}
 
 async function load(){
-  try{const r=await window.storage.get('cix4_studies');if(r&&r.value){studies=JSON.parse(r.value);return;}}catch(e){}
-  try{const l=localStorage.getItem('cix4_studies');if(l){studies=JSON.parse(l);return;}}catch(e){}
+  setStatus('Loading…');
+  try{
+    studies=await fetchFromGitHub();
+    setStatus('Up to date','ok');
+  }catch(e){
+    setStatus('Load failed — showing cached data','err');
+    try{const l=localStorage.getItem('cix4_studies');if(l)studies=JSON.parse(l);}catch(_){}
+  }
 }
-function save(){
-  const j=JSON.stringify(studies);
-  try{window.storage.set('cix4_studies',j);}catch(e){}
-  try{localStorage.setItem('cix4_studies',j);}catch(e){}
+
+async function save(){
+  // always keep a local backup
+  try{localStorage.setItem('cix4_studies',JSON.stringify(studies));}catch(_){}
+  try{
+    await saveToGitHub(studies);
+    setStatus('Saved ✓','ok');
+  }catch(e){
+    setStatus('Save failed: '+e.message,'err');
+    alert('Could not save to GitHub: '+e.message+'\n\nYour change is saved locally in this browser as a backup. Make sure your GitHub token is set correctly.');
+  }
 }
+
+async function manualSync(){
+  setStatus('Refreshing…');
+  try{studies=await fetchFromGitHub();renderAll();setStatus('Up to date','ok');}
+  catch(e){setStatus('Refresh failed','err');}
+}
+
+// ── Token modal ───────────────────────────────────────────────────────────────
+function openTokenModal(){
+  document.getElementById('token-input').value=getToken();
+  const wrap=document.getElementById('token-clear-wrap');
+  wrap.innerHTML=getToken()?'<a href="#" onclick="clearToken();return false;" style="color:#c62828;font-size:11px;">Remove saved token</a>':'';
+  document.getElementById('token-overlay').classList.add('open');
+}
+function closeTokenModal(){document.getElementById('token-overlay').classList.remove('open');}
+function saveToken(){const t=document.getElementById('token-input').value.trim();if(t)localStorage.setItem('cix_gh_token',t);else localStorage.removeItem('cix_gh_token');closeTokenModal();}
+function clearToken(){localStorage.removeItem('cix_gh_token');closeTokenModal();}
+
+// ── Utility ───────────────────────────────────────────────────────────────────
+function qOf(s){const m=s.start||s.end;if(!m)return null;for(const[q,ms]of Object.entries(QMAP))if(ms.includes(m))return q;return null;}
 function genId(){return`CIX-2026-${String(studies.length+1).padStart(3,'0')}`;}
 
+// ── Multi-select ──────────────────────────────────────────────────────────────
 function buildMs(key,opts,hasSelectAll){
   const dd=document.getElementById(`ms-${key}-dd`);
   let html=hasSelectAll?`<div class="ms-select-all" onclick="selectAll('${key}')">☑ Select all</div>`:'';
@@ -263,6 +374,7 @@ function setMs(key,vals){
   renderChips(key);
 }
 
+// ── Insights entries ──────────────────────────────────────────────────────────
 function addInsEntry(data){
   const id=iCount++;const d=data||{};
   const el=document.createElement('div');el.className='ins-entry';
@@ -294,6 +406,7 @@ function addInsEntry(data){
 function toggleEval(cb,id){const s=document.getElementById('eval-'+id);s.style.opacity=cb.checked?'1':'.35';s.style.pointerEvents=cb.checked?'auto':'none';}
 function toggleImpact(cb,id){const s=document.getElementById('impact-'+id);s.style.opacity=cb.checked?'1':'.35';s.style.pointerEvents=cb.checked?'auto':'none';}
 
+// ── Study modal ───────────────────────────────────────────────────────────────
 function openAdd(){
   editId=null;
   document.getElementById('modal-title').textContent='Add research study';
@@ -323,7 +436,7 @@ function openEdit(id){
 }
 function closeModal(){document.getElementById('modal-overlay').classList.remove('open');}
 
-function saveStudy(){
+async function saveStudy(){
   const name=document.getElementById('f-name').value.trim();
   if(!name){alert('Research name is required.');return;}
   const insights=[];
@@ -333,11 +446,20 @@ function saveStudy(){
   });
   const obj={id:editId||genId(),name,project:document.getElementById('f-project').value.trim(),ptag:document.getElementById('f-ptag').value,teams:[...msState.team],categories:[...msState.cat],markets:[...msState.mkt],pocs:[...msState.poc],start:document.getElementById('f-start').value,end:document.getElementById('f-end').value,insights};
   if(editId){const i=studies.findIndex(x=>x.id===editId);studies[i]=obj;}else studies.push(obj);
-  save();closeModal();renderAll();
+  closeModal();renderAll();
+  await save();
 }
-function delStudy(id){if(!confirm('Delete this study?'))return;studies=studies.filter(x=>x.id!==id);save();renderAll();}
+
+async function delStudy(id){
+  if(!confirm('Delete this study?'))return;
+  studies=studies.filter(x=>x.id!==id);
+  renderAll();
+  await save();
+}
+
 function toggleExp(id){expanded.has(id)?expanded.delete(id):expanded.add(id);renderTable();}
 
+// ── Render ────────────────────────────────────────────────────────────────────
 function renderTable(){
   const qf=document.getElementById('fq').value,tf=document.getElementById('ft').value,pf=document.getElementById('fp').value,cf=document.getElementById('fc').value;
   const filtered=studies.filter(s=>{
@@ -431,3 +553,5 @@ function renderAll(){renderKPIs();renderCharts();renderTable();}
   await load();renderAll();
 })();
 </script>
+</body>
+</html>
