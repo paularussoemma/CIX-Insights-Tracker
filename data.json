@@ -586,7 +586,7 @@
     "end": "2026-05",
     "insights": [
       {
-        "desc": "Insight 1: \"Users think returning a mattress is a hassle and most don't consider it a real option ÃÂ¢ÃÂÃÂ leading them to delay purchase, buy from known brands, or visit physical stores instead\" Action: AB test UK #58 Win. Return-focused USPs + return process modal on PDP +4.27% CVR +3.10% ATC +3.08% Begin Checkout +1.56% RPU -2.64% AOV Desktop: strong positive (+11.32% RPU). Mobile: funnel gains but AOV compression. Recommendation: roll out on desktop across all categories; revisit mobile before rolling out.",
+        "desc": "Insight 1: \"Users think returning a mattress is a hassle and most don't consider it a real option leading them to delay purchase, buy from known brands, or visit physical stores instead\" Action: AB test UK #58 Win. Return-focused USPs + return process modal on PDP +4.27% CVR +3.10% ATC +3.08% Begin Checkout +1.56% RPU -2.64% AOV Desktop: strong positive (+11.32% RPU). Mobile: funnel gains but AOV compression. Recommendation: roll out on desktop across all categories; revisit mobile before rolling out.",
         "impl": true,
         "ready": true,
         "impact": "yes"
