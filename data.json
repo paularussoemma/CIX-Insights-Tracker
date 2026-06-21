@@ -435,43 +435,43 @@
     "end": "2026-04",
     "insights": [
       {
-        "desc": "Insight 1: \"AU consumers rely on community-established signals (reviews, friend recommendations, platform ratings)\" Action: Enroll in Trustpilot (¬10K/year) to address current low score (1.3) Timeline: June-July 2026",
+        "desc": "\"AU consumers rely on community-established signals (reviews, friend recommendations, platform ratings)\" Action: Enroll in Trustpilot (¬10K/year) to address current low score (1.3) Timeline: June-July 2026",
         "impl": true,
         "ready": false,
         "impact": ""
       },
       {
-        "desc": "Insight 2: \"AU consumers have a high need for detailed product specs, clear differentiation and stronger proof points\" Action 1: Run full PDP audit using Luma's Source of Truth doc; identify incorrect, missing, or insufficiently detailed product info Timeline: June 2026 Action 2: Update copy from audit output and R&D input; pass through copywriting and Legal validation Timeline: July-August 2026",
+        "desc": "\"AU consumers have a high need for detailed product specs, clear differentiation and stronger proof points\" Action 1: Run full PDP audit using Luma's Source of Truth doc; identify incorrect, missing, or insufficiently detailed product info Timeline: June 2026 Action 2: Update copy from audit output and R&D input; pass through copywriting and Legal validation Timeline: July-August 2026",
         "impl": true,
         "ready": true,
         "impact": "yes"
       },
       {
-        "desc": "Insight 3: \"JP consumer evidence requirements are one of the highest in the dataset - product claims must be proven\" Action 1: Audit and update JP webshop comms Timeline: June-July 2026 Action 2: Collect scientific claims for use across webshop and paid media; update website Timeline: July 2026",
+        "desc": "\"JP consumer evidence requirements are one of the highest in the dataset - product claims must be proven\" Action 1: Audit and update JP webshop comms Timeline: June-July 2026 Action 2: Collect scientific claims for use across webshop and paid media; update website Timeline: July 2026",
         "impl": true,
         "ready": false,
         "impact": ""
       },
       {
-        "desc": "Insight 4: \"JP consumers respond to brands that signal safety, reliability, heritage, and institutional credibility\" Action 1: Apply for local recognition and awards, including JIS certification Timeline: July-August 2026 Action 2: Showcase JIS recognition across webshop, paid media and CRM Timeline: July 2026",
+        "desc": "\"JP consumers respond to brands that signal safety, reliability, heritage, and institutional credibility\" Action 1: Apply for local recognition and awards, including JIS certification Timeline: July-August 2026 Action 2: Showcase JIS recognition across webshop, paid media and CRM Timeline: July 2026",
         "impl": false,
         "ready": false,
         "impact": ""
       },
       {
-        "desc": "Insight 5: \"JP over-indexes on testing as the quality-forming moment (34% vs. 29% global) -  highest of any market\" Action: Better highlight offline presence on webshop; push 100-night trial across webshop and paid media Timeline: July 2026",
+        "desc": "\"JP over-indexes on testing as the quality-forming moment (34% vs. 29% global) -  highest of any market\" Action: Better highlight offline presence on webshop; push 100-night trial across webshop and paid media Timeline: July 2026",
         "impl": false,
         "ready": false,
         "impact": ""
       },
       {
-        "desc": "Insight 6: \"JP consumers are highly detail-oriented and expect thorough product information\" Action: Run JP PDP audit (same workstream as AU, Stage 1 + Stage 2 above) Timeline: July-August 2026",
+        "desc": "\"JP consumers are highly detail-oriented and expect thorough product information\" Action: Run JP PDP audit (same workstream as AU, Stage 1 + Stage 2 above) Timeline: July-August 2026",
         "impl": false,
         "ready": false,
         "impact": ""
       },
       {
-        "desc": "Insight 7: \"MX consumers are achievement-driven, socially visible and aspirational - they favour brands that signal success and market leadership\" Action: Country brand strategy under review based on MX CIX results",
+        "desc": "\"MX consumers are achievement-driven, socially visible and aspirational - they favour brands that signal success and market leadership\" Action: Country brand strategy under review based on MX CIX results",
         "impl": true,
         "ready": true,
         "impact": "yes"
