@@ -757,8 +757,8 @@
       {
         "desc": "\"Independent tests are a major trust lever: independent awards/test results are strongly influential and often among the first things consumers look for.\"\nAction: Leverage high awareness and influence of credible test brands (webshop, ads).\nAction 2: Create a verifiable Trust Center around the products (tests, materials, warranty, proof):",
         "impl": true,
-        "ready": false,
-        "impact": ""
+        "ready": true,
+        "impact": "yes"
       }
     ]
   }
