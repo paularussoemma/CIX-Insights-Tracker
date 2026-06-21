@@ -626,31 +626,31 @@
     "end": "2026-05",
     "insights": [
       {
-        "desc": "Insight 1: \"Delivery window is too broad (3-10 days); exact date/time often only shared same-day\" Action: Lead Time accuracy model ÃÂ¢ÃÂÃÂ daily-updated, live in 5 countries; the rest targeting June 2026",
+        "desc": "Insight 1: \"Delivery window is too broad (3-10 days); exact date/time often only shared same-day\" Action: Lead Time accuracy model daily-updated, live in 5 countries; the rest targeting June 2026",
         "impl": true,
         "ready": false,
         "impact": ""
       },
       {
-        "desc": "Insight 2: \"Critical Emma and carrier communication conflict across touchpoints\" Action: Order Status Page redesign ÃÂ¢ÃÂÃÂ Phase 1 live; full rebuild targeting September 2026",
+        "desc": "Insight 2: \"Critical Emma and carrier communication conflict across touchpoints\" Action: Order Status Page redesign - Phase 1 live; full rebuild targeting September 2026",
         "impl": true,
         "ready": false,
         "impact": ""
       },
       {
-        "desc": "Insight 3: \"Order tracking is unreliable across most markets\" Action: Order Status Page redesign ÃÂ¢ÃÂÃÂ Phase 1 live; full rebuild targeting September 2026",
+        "desc": "Insight 3: \"Order tracking is unreliable across most markets\" Action: Order Status Page redesign - Phase 1 live; full rebuild targeting September 2026",
         "impl": true,
         "ready": false,
         "impact": ""
       },
       {
-        "desc": "Insight 4: \"Return link is critical to customers and is missing from the confirmation email\" Action: New Emma-owned Return Portal ÃÂ¢ÃÂÃÂ targeting June 2026",
+        "desc": "Insight 4: \"Return link is critical to customers and is missing from the confirmation email\" Action: New Emma-owned Return Portal - targeting June 2026",
         "impl": false,
         "ready": false,
         "impact": ""
       },
       {
-        "desc": "Insight 5: \"Returns pickup is unreliable and slow, causing high frustration levels and potential detraction\" Action 1: New Emma-owned Return Portal ÃÂ¢ÃÂÃÂ targeting June 2026 Action 2: Refunds speed & automation ÃÂ¢ÃÂÃÂ targeting 4-day manual / 24-hour automated; target Q3 2026",
+        "desc": "Insight 5: \"Returns pickup is unreliable and slow, causing high frustration levels and potential detraction\" Action 1: New Emma-owned Return Portal - targeting June 2026 Action 2: Refunds speed & automation - targeting 4-day manual / 24-hour automated; target Q3 2026",
         "impl": false,
         "ready": false,
         "impact": ""
