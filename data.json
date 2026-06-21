@@ -707,5 +707,59 @@
         "impact": ""
       }
     ]
+  },
+  {
+    "id": "CIX-2026-016",
+    "name": "Box Spring Bed Consumers",
+    "project": "Grow BSB Category",
+    "ptag": "P2",
+    "teams": [
+      "Marketing",
+      "Markets",
+      "Category Management"
+    ],
+    "categories": [
+      "Bed"
+    ],
+    "markets": [
+      "DE"
+    ],
+    "pocs": [
+      "Paula"
+    ],
+    "start": "2026-03",
+    "end": "2026-03",
+    "insights": [
+      {
+        "desc": "\"Category literacy is high: conversion depends on differentiation and de-risking, not basic education.\"\nAction:1 Callibrate the Product Finder (“Sleep Match”) + clear comparisons: reduce confusion on model differences; \nAction 2: Adopt a comfort-first communication (copy, assets).",
+        "impl": false,
+        "ready": false,
+        "impact": ""
+      },
+      {
+        "desc": "\"Sleep performance owns the category: “better sleep/comfort” dominates structured and open responses.\"\nAction:1 Callibrate the Product Finder (“Sleep Match”) + clear comparisons: reduce confusion on model differences; \nAction 2: Adopt a comfort-first communication (copy, assets).",
+        "impl": false,
+        "ready": false,
+        "impact": ""
+      },
+      {
+        "desc": "\"The decision is mattress-led, then value-led: comfort/quality is #1, price/value is #2.\"\nAction: Fix price trust (reduce discount confusion; show total cost): addresses unclear “actual price due to discounts.”",
+        "impl": false,
+        "ready": false,
+        "impact": ""
+      },
+      {
+        "desc": "\"Online sale is blocked by validation + choice overload: inability to try and too many choices drive hesitation.\"\nAction 1: Callibrate the Product Finder (“Sleep Match”) + clear comparisons: reduce confusion on model differences; \nAction 2: Rationalize assortment into 3–5 core options: reduce choice overload using choice-architecture best practice.\nAction 3: Bundle friction-removal services, delivery + assembly communicated prominently: aligns to top service demand and addresses online barriers.",
+        "impl": false,
+        "ready": false,
+        "impact": ""
+      },
+      {
+        "desc": "\"Independent tests are a major trust lever: independent awards/test results are strongly influential and often among the first things consumers look for.\"\nAction: Leverage high awareness and influence of credible test brands (webshop, ads).\nAction 2: Create a verifiable Trust Center around the products (tests, materials, warranty, proof):",
+        "impl": true,
+        "ready": false,
+        "impact": ""
+      }
+    ]
   }
 ]
