@@ -806,6 +806,42 @@
         "impl": false,
         "ready": false,
         "impact": ""
+      },
+      {
+        "desc": "\"Buyers use visual product hierarchy as a decision shortcut when navigating the portfolio.\"\n\nH: Positioning Performance in the CP as the more premium tier, will increase conversion among a parcel of qualified buyers.\n\nA: Introduce hierarchy cues on the category page that position Performance as the most premium product",
+        "impl": false,
+        "ready": false,
+        "impact": ""
+      },
+      {
+        "desc": "\"Buyers struggle to determine which Performance variant is right for them. Firmness and support are key topics that often remain unresolved until after purchase due to lack of information.\"\n\nH: Providing directional guidance will lower return rates for Performance.\n\nA: Improve firmness communication based on NPS feedback and support verbatims.\nImprove the Performance 25 vs. Performance 28 vs. Performance 30 recommendation logic by linking body weight, support needs and desired feel to the recommended height variant.\nAdd a “Will this feel right for me?” like decision module on the Performance PDP linking body profile and sleeping preferences to expected firmness and feel.",
+        "impl": false,
+        "ready": false,
+        "impact": ""
+      },
+      {
+        "desc": "\"The 100-night-trial period is a crucial purchase driver and should be framed as a risk-transfer mechanism\"\n\nH: Reframing the trial period to explicitly address online purchase anxiety will increase conversion among first-time buyers without store access.\n\nA: Increase visibility of the trial period near key decision moments and the CTA.\nReframe messaging around risk transfer, e.g. “Try Performance at home, worry-free. If it's not right for you, we'll take care of it.”",
+        "impl": false,
+        "ready": false,
+        "impact": ""
+      },
+      {
+        "desc": "\"Users increasingly adopt AI-assisted shopping behaviours. There is an opportunity to further refine the experience to reduce uncertainty and support decision-making\"\n\nH: Increasing the prominence of Product Finder and Chat AI throughout the journey and optimizing recommendation logic, will increase add-to-cart, improve product-selection accuracy and lower return rates.\nProgressively adopting AI-assisted navigation in the webshop will make users arrive more seamlessly at product-fit and increase conversion.\n\nA: Increase visibility of Product Finder and Chat AI early in the consideration journey.\nOptimise recommendation logic to account for multiple needs and household dynamics.\nDevelop an AI-powered navigation layer that progressively shifts product discovery in the webshop from category browsing to need-based recommendation",
+        "impl": false,
+        "ready": false,
+        "impact": ""
+      },
+      {
+        "desc": "\"Price increase after size selection, immediately before basket addition, generate frustration, skepticism and friction at a critical stage of the conversion journey.\"\n\nRequiring size selection before any price is displayed, or defaulting the displayed price to the most commonly purchased size, will increase add-to-cart.\n\nRun an A/B test requiring size selection before displaying the final price, or defaulting the displayed price to the most common size.",
+        "impl": false,
+        "ready": false,
+        "impact": ""
+      },
+      {
+        "desc": "\"Airgrid is a crucial differentiator for all buyers, but is valued for different reasons\"\n\nH: Presenting AirGrid through distinct use-case narratives will increase feature relevance across a broader range of Performance evaluators and increase add-to-cart and conversion.\n\nA: Communicate AirGrid through three distinct use cases: relief from overheating, couple-sleep compatibility and proof of premium differentiation across webshop touchpoints (Tags, Collection page, PDP).",
+        "impl": false,
+        "ready": false,
+        "impact": ""
       }
     ]
   }
