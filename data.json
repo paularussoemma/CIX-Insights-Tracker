@@ -761,5 +761,52 @@
         "impact": "yes"
       }
     ]
+  },
+  {
+    "id": "CIX-2026-017",
+    "name": "Performance Line - Buyers Discovery",
+    "project": "Scale Performance Line",
+    "ptag": "P2",
+    "teams": [
+      "Marketing"
+    ],
+    "categories": [
+      "Mattress"
+    ],
+    "markets": [
+      "FR",
+      "DE"
+    ],
+    "pocs": [
+      "Paula"
+    ],
+    "start": "2026-05",
+    "end": "2026-06",
+    "insights": [
+      {
+        "desc": "\"Buyers enter the Performance purchase journey through specific triggers\"\n\nHypothesis:Leading acquisition messaging with the trigger that initiated the purchase journey will increase buyer self-identification, ad relevance and consideration compared to tech-led or premium-positioning communication.\n\nActions: Create separate creative routes for overheating, recovery / relief and differing household sleep needs.\nA/B test trigger-led messaging against existing premium-sleep messaging across paid media and landing pages.",
+        "impl": false,
+        "ready": false,
+        "impact": ""
+      },
+      {
+        "desc": "\"Airgrid is a crucial differentiator for all buyers, but is valued for different reasons\"\n\nHypothesis: Presenting AirGrid through distinct use-case narratives will increase feature relevance across a broader range of Performance evaluators and increase add-to-cart and conversion.\n\nAction: Communicate AirGrid through three distinct use cases: relief from overheating, couple-sleep compatibility and differentiation as best product in the portfolio across marketing touchpoints.",
+        "impl": false,
+        "ready": false,
+        "impact": ""
+      },
+      {
+        "desc": "\"The same product appeals to two distinct buyer archetypes with different motivations, decision criteria and value perception.\"\n\nHypothesis: Tailoring messaging to the motivation of each archetype will increase message relevance, buyer self-identification and conversion compared to a single communication approach.\n\nActions: Build separate creative routes for the two buyer archetypes. For Relief Seekers, focus on recovery, relief, cooling and measurable improvement. For Thorough Upgraders, focus on long-term value, investment proof and the ability to try at home.",
+        "impl": false,
+        "ready": false,
+        "impact": ""
+      },
+      {
+        "desc": "\"Prior ownership creates a trust advantage that significantly reduces evaluation effort and increases confidence when considering higher-tier products within the Emma portfolio.\"\n\nHypothesis: Targeting existing Emma customers with upgrade-oriented messaging linked to evolving sleep needs, recovery goals and household changes will increase consideration and conversion into the Performance range.\n\nAction: Launch a customer upgrade journey through CRM that re-engages existing Emma owners with messaging focused on improved sleep outcomes, recovery, temperature regulation, changing household needs and upgrading to the flagship mattress experience.",
+        "impl": false,
+        "ready": false,
+        "impact": ""
+      }
+    ]
   }
 ]
