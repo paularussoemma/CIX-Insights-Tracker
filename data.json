@@ -563,8 +563,8 @@
   {
     "id": "CIX-2026-013",
     "name": "Continuous Discovery",
-    "project": "Increase Insights Effectiveness; Optimize Shopping Journey",
-    "ptag": "P2",
+    "project": "Optimize Shopping Journey",
+    "ptag": "",
     "teams": [
       "Tech",
       "Ecomm",
