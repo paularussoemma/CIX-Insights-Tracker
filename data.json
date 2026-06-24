@@ -435,7 +435,7 @@
     "end": "2026-04",
     "insights": [
       {
-        "desc": "\"AU consumers rely on community-established signals (reviews, friend recommendations, platform ratings)\" Action: Enroll in Trustpilot (¬10K/year) to address current low score (1.3) Timeline: June-July 2026",
+        "desc": "\"AU consumers rely on community-established signals (reviews, friend recommendations, platform ratings)\" Action: Enroll in Trustpilot (Â¬10K/year) to address current low score (1.3) Timeline: June-July 2026",
         "impl": true,
         "ready": false,
         "impact": ""
@@ -512,8 +512,8 @@
   {
     "id": "CIX-2026-012",
     "name": "Webshop Quality Research",
-    "project": "Increase insights Effectiveness",
-    "ptag": "P2",
+    "project": "Optimize Shopping Journey",
+    "ptag": "",
     "teams": [
       "Tech",
       "Ecomm",
@@ -731,25 +731,25 @@
     "end": "2026-04",
     "insights": [
       {
-        "desc": "\"Category literacy is high: conversion depends on differentiation and de-risking, not basic education.\"\nAction:1 Callibrate the Product Finder (“Sleep Match”) + clear comparisons: reduce confusion on model differences; \nAction 2: Adopt a comfort-first communication (copy, assets).",
+        "desc": "\"Category literacy is high: conversion depends on differentiation and de-risking, not basic education.\"\nAction:1 Callibrate the Product Finder (âSleep Matchâ) + clear comparisons: reduce confusion on model differences; \nAction 2: Adopt a comfort-first communication (copy, assets).",
         "impl": false,
         "ready": false,
         "impact": ""
       },
       {
-        "desc": "\"Sleep performance owns the category: “better sleep/comfort” dominates structured and open responses.\"\nAction:1 Callibrate the Product Finder (“Sleep Match”) + clear comparisons: reduce confusion on model differences; \nAction 2: Adopt a comfort-first communication (copy, assets).",
+        "desc": "\"Sleep performance owns the category: âbetter sleep/comfortâ dominates structured and open responses.\"\nAction:1 Callibrate the Product Finder (âSleep Matchâ) + clear comparisons: reduce confusion on model differences; \nAction 2: Adopt a comfort-first communication (copy, assets).",
         "impl": false,
         "ready": false,
         "impact": ""
       },
       {
-        "desc": "\"The decision is mattress-led, then value-led: comfort/quality is #1, price/value is #2.\"\nAction: Fix price trust (reduce discount confusion; show total cost): addresses unclear “actual price due to discounts.”",
+        "desc": "\"The decision is mattress-led, then value-led: comfort/quality is #1, price/value is #2.\"\nAction: Fix price trust (reduce discount confusion; show total cost): addresses unclear âactual price due to discounts.â",
         "impl": false,
         "ready": false,
         "impact": ""
       },
       {
-        "desc": "\"Online sale is blocked by validation + choice overload: inability to try and too many choices drive hesitation.\"\nAction 1: Callibrate the Product Finder (“Sleep Match”) + clear comparisons: reduce confusion on model differences; \nAction 2: Rationalize assortment into 3–5 core options: reduce choice overload using choice-architecture best practice.\nAction 3: Bundle friction-removal services, delivery + assembly communicated prominently: aligns to top service demand and addresses online barriers.",
+        "desc": "\"Online sale is blocked by validation + choice overload: inability to try and too many choices drive hesitation.\"\nAction 1: Callibrate the Product Finder (âSleep Matchâ) + clear comparisons: reduce confusion on model differences; \nAction 2: Rationalize assortment into 3â5 core options: reduce choice overload using choice-architecture best practice.\nAction 3: Bundle friction-removal services, delivery + assembly communicated prominently: aligns to top service demand and addresses online barriers.",
         "impl": false,
         "ready": false,
         "impact": ""
