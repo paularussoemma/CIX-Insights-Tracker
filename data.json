@@ -435,7 +435,7 @@
     "end": "2026-04",
     "insights": [
       {
-        "desc": "\"AU consumers rely on community-established signals (reviews, friend recommendations, platform ratings)\" Action: Enroll in Trustpilot (Â¬10K/year) to address current low score (1.3) Timeline: June-July 2026",
+        "desc": "\"AU consumers rely on community-established signals (reviews, friend recommendations, platform ratings)\" Action: Enroll in Trustpilot (ÃÂ¬10K/year) to address current low score (1.3) Timeline: June-July 2026",
         "impl": true,
         "ready": false,
         "impact": ""
@@ -731,25 +731,25 @@
     "end": "2026-04",
     "insights": [
       {
-        "desc": "\"Category literacy is high: conversion depends on differentiation and de-risking, not basic education.\"\nAction:1 Callibrate the Product Finder (âSleep Matchâ) + clear comparisons: reduce confusion on model differences; \nAction 2: Adopt a comfort-first communication (copy, assets).",
+        "desc": "\"Category literacy is high: conversion depends on differentiation and de-risking, not basic education.\"\nAction:1 Callibrate the Product Finder (Ã¢ÂÂSleep MatchÃ¢ÂÂ) + clear comparisons: reduce confusion on model differences; \nAction 2: Adopt a comfort-first communication (copy, assets).",
         "impl": false,
         "ready": false,
         "impact": ""
       },
       {
-        "desc": "\"Sleep performance owns the category: âbetter sleep/comfortâ dominates structured and open responses.\"\nAction:1 Callibrate the Product Finder (âSleep Matchâ) + clear comparisons: reduce confusion on model differences; \nAction 2: Adopt a comfort-first communication (copy, assets).",
+        "desc": "\"Sleep performance owns the category: Ã¢ÂÂbetter sleep/comfortÃ¢ÂÂ dominates structured and open responses.\"\nAction:1 Callibrate the Product Finder (Ã¢ÂÂSleep MatchÃ¢ÂÂ) + clear comparisons: reduce confusion on model differences; \nAction 2: Adopt a comfort-first communication (copy, assets).",
         "impl": false,
         "ready": false,
         "impact": ""
       },
       {
-        "desc": "\"The decision is mattress-led, then value-led: comfort/quality is #1, price/value is #2.\"\nAction: Fix price trust (reduce discount confusion; show total cost): addresses unclear âactual price due to discounts.â",
+        "desc": "\"The decision is mattress-led, then value-led: comfort/quality is #1, price/value is #2.\"\nAction: Fix price trust (reduce discount confusion; show total cost): addresses unclear Ã¢ÂÂactual price due to discounts.Ã¢ÂÂ",
         "impl": false,
         "ready": false,
         "impact": ""
       },
       {
-        "desc": "\"Online sale is blocked by validation + choice overload: inability to try and too many choices drive hesitation.\"\nAction 1: Callibrate the Product Finder (âSleep Matchâ) + clear comparisons: reduce confusion on model differences; \nAction 2: Rationalize assortment into 3â5 core options: reduce choice overload using choice-architecture best practice.\nAction 3: Bundle friction-removal services, delivery + assembly communicated prominently: aligns to top service demand and addresses online barriers.",
+        "desc": "\"Online sale is blocked by validation + choice overload: inability to try and too many choices drive hesitation.\"\nAction 1: Callibrate the Product Finder (Ã¢ÂÂSleep MatchÃ¢ÂÂ) + clear comparisons: reduce confusion on model differences; \nAction 2: Rationalize assortment into 3Ã¢ÂÂ5 core options: reduce choice overload using choice-architecture best practice.\nAction 3: Bundle friction-removal services, delivery + assembly communicated prominently: aligns to top service demand and addresses online barriers.",
         "impl": false,
         "ready": false,
         "impact": ""
@@ -759,6 +759,36 @@
         "impl": true,
         "ready": true,
         "impact": "yes"
+      }
+    ]
+  },
+  {
+    "id": "CIX-2026-017",
+    "name": "Franchise - Pilot Store Visit",
+    "project": "Franchise P1",
+    "ptag": "P1",
+    "teams": [],
+    "categories": [],
+    "markets": [
+      "FR"
+    ],
+    "pocs": [
+      "Gabriela"
+    ],
+    "start": "2026-06",
+    "end": "2026-06",
+    "insights": [
+      {
+        "desc": "\"The store team expressed a clear need to issue refunds as store credit or coupons to retain customers within the franchise network rather than losing them to full cash refunds.\" \t\nAction: Scope store credit and coupon issuance as a medium-term EVA franchise feature to reduce refund churn and retain customers in the network. Co-create with EVA & New Black. Priority: Medium.",
+        "impl": true,
+        "ready": false,
+        "impact": ""
+      },
+      {
+        "desc": "\"The store team expressed interest in dropshipping, the ability to buy in-store and have the item delivered to a different address, as a desired capability. \tConduct a legal and operational feasibility assessment of dropshipping within the franchise model. Map the data privacy constraints (customer personal data, order fulfilment on behalf of franchise).\" \nAction: Explore a Partner-Store-managed dropshipping pilot where Emma enables catalogue access but the franchise retains order ownership. Co-create with EVA, Legal, and MK1. Priority: LOW (legal review required first).",
+        "impl": false,
+        "ready": false,
+        "impact": ""
       }
     ]
   }
