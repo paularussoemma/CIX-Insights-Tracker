@@ -786,7 +786,13 @@
       },
       {
         "desc": "\"The store team expressed interest in dropshipping, the ability to buy in-store and have the item delivered to a different address, as a desired capability. \tConduct a legal and operational feasibility assessment of dropshipping within the franchise model. Map the data privacy constraints (customer personal data, order fulfilment on behalf of franchise).\" \nAction: Explore a Partner-Store-managed dropshipping pilot where Emma enables catalogue access but the franchise retains order ownership. Co-create with EVA, Legal, and MK1. Priority: LOW (legal review required first).",
-        "impl": false,
+        "impl": true,
+        "ready": false,
+        "impact": ""
+      },
+      {
+        "desc": "\"The store team confirmed the need for a pickup verification, allowing a third party to collect an order on behalf of the customer.\"\nAction: Confirm pickup verification is functioning correctly across all roles and stores in the franchise rollout. Document as a resolved need and include in the EVA onboarding materials for future franchise partners.",
+        "impl": true,
         "ready": false,
         "impact": ""
       }
