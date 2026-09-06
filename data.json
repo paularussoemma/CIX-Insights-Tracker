@@ -498,14 +498,14 @@
       {
         "desc": "Insight 1: \"The burned-out consumer isn't looking for just another deal - they want permission to invest in themselves despite global uncertainty.\" Lean into self-investment framing Action: Implemented in BF script: \"You can afford to dream\"",
         "impl": true,
-        "ready": false,
-        "impact": ""
+        "ready": true,
+        "impact": "yes"
       },
       {
         "desc": "Insight 2: \"Life transitions drive the majority of mattress purchases.\" Touch on \"new chapter\" energy and nostalgia for good sleep Action: Implemented in BF TV script: \"The details make the deal\"",
-        "impl": false,
-        "ready": false,
-        "impact": ""
+        "impl": true,
+        "ready": true,
+        "impact": "yes"
       }
     ]
   },
