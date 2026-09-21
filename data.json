@@ -292,30 +292,6 @@
     ]
   },
   {
-    "id": "CIX-2026-007",
-    "name": "Test on Customer Subscription Journey",
-    "project": "Increase Insights Effectiveness",
-    "ptag": "P2",
-    "teams": [
-      "CRM"
-    ],
-    "categories": [],
-    "markets": [],
-    "pocs": [
-      "Paula"
-    ],
-    "start": "2026-02",
-    "end": "2026-02",
-    "insights": [
-      {
-        "desc": "Insight 1",
-        "impl": true,
-        "ready": true,
-        "impact": "no"
-      }
-    ]
-  },
-  {
     "id": "CIX-2026-008",
     "name": "India Size Selector",
     "project": "Increase Insights effectiveness",
