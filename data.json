@@ -292,36 +292,6 @@
     ]
   },
   {
-    "id": "CIX-2026-008",
-    "name": "India Size Selector",
-    "project": "Increase Insights effectiveness",
-    "ptag": "P2",
-    "teams": [
-      "Tech",
-      "Ecomm",
-      "CRO"
-    ],
-    "categories": [
-      "Mattress"
-    ],
-    "markets": [
-      "IN"
-    ],
-    "pocs": [
-      "Egon"
-    ],
-    "start": "2026-03",
-    "end": "2026-03",
-    "insights": [
-      {
-        "desc": "Insight 1",
-        "impl": true,
-        "ready": true,
-        "impact": "no"
-      }
-    ]
-  },
-  {
     "id": "CIX-2026-009",
     "name": "Original Line - Perceived Value Tests",
     "project": "Original Reimagined",
