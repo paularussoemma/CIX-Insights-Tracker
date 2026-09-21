@@ -590,6 +590,12 @@
         "impl": true,
         "ready": true,
         "impact": "yes"
+      },
+      {
+        "desc": "Reviews: FR #73 review-visibility test lifted engagement (+81% review click rate) but hurt PDP conversion (ATC -1.71%, RPU -0.83%) — desktop Yotpo block competed with Add to Cart. UK #60 social-proof-in-cart test trended positive (+2.04% Transaction Rate, +1.7% AOV) but was inconclusive. UK #59 removing reviews/UGC from Homepage & Category Pages was a clear win: +3.91% ATC, +6.45% Begin Checkout, +8.48% CVR, +11.92% RPU — reviews/UGC there added distraction rather than trust.",
+        "impl": true,
+        "ready": true,
+        "impact": "yes"
       }
     ]
   },
