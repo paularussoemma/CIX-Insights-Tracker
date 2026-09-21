@@ -131,13 +131,13 @@
     "end": "2026-02",
     "insights": [
       {
-        "desc": "Insight 1: Mattress cover is slippery",
+        "desc": "Insight 1: Mattress cover is slippery\nAction: Qualitative behavioural feedback confirms the finding as a point of iteration.",
         "impl": true,
         "ready": true,
         "impact": "yes"
       },
       {
-        "desc": "Insight 2: Firmness Levels should be callibrated in the next iteration cycle",
+        "desc": "Insight 2: Firmness Levels should be callibrated in the next iteration cycle\nAction: Qualitative and quantitative behavioural feedback confirms the finding as a point of iteration - key reason for mattress returns.",
         "impl": true,
         "ready": true,
         "impact": "yes"
