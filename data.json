@@ -266,25 +266,25 @@
     "end": "2026-02",
     "insights": [
       {
-        "desc": "Insight 1",
+        "desc": "Reducing the number of questions will increase global response rates",
         "impl": true,
         "ready": false,
         "impact": ""
       },
       {
-        "desc": "Insight 2",
+        "desc": "Aligning the attribution question (Q1) with Latana will give us a more trustworthy and granular understanding to continuously improve our Attribution model",
         "impl": true,
         "ready": false,
         "impact": ""
       },
       {
-        "desc": "Insight 3",
+        "desc": "Global standardization of questions will allow for a more insightful and strategic monthly report to the company",
         "impl": true,
         "ready": false,
         "impact": ""
       },
       {
-        "desc": "Insight 4",
+        "desc": "Asking what ultimately led consumers to purchase and what almost stopped them from doing it, beyond price, will allow us to continuously strategically improve the purchase journey and experience for customers",
         "impl": true,
         "ready": false,
         "impact": ""
