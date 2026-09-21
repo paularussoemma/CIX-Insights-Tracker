@@ -170,13 +170,13 @@
       {
         "desc": "Insight 1 - final design recommendation",
         "impl": true,
-        "ready": false,
+        "ready": true,
         "impact": "yes"
       },
       {
         "desc": "Insight 2 - final design recommendation",
         "impl": true,
-        "ready": false,
+        "ready": true,
         "impact": "yes"
       }
     ]
