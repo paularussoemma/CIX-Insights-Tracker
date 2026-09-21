@@ -885,6 +885,19 @@
     ],
     "start": "2026-07",
     "end": "2026-07",
-    "insights": []
+    "insights": [
+      {
+        "desc": "\"Lead with functional proof: durability tests, materials specs, independent lab results.\nUse measured, precise language; avoid superlatives and broad claims.\nLocalise credibility: show R&D provenance, awards, and country‑of‑origin cues\"",
+        "impl": true,
+        "ready": true,
+        "impact": "yes"
+      },
+      {
+        "desc": "Creator Excellence Workstream within IM P2 - Implementation of Quality Perception ranking into AI BRIEF GENERATOR FOR IM tailored to each market using the Clustyers derived from the project",
+        "impl": true,
+        "ready": true,
+        "impact": "yes"
+      }
+    ]
   }
 ]
