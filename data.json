@@ -843,5 +843,48 @@
         "impact": "yes"
       }
     ]
+  },
+  {
+    "id": "CIX-2026-018",
+    "name": "Quality Perception Research - Wave 2",
+    "project": "Increase Brand Preference",
+    "ptag": "",
+    "teams": [
+      "Ecomm",
+      "Markets",
+      "B&CX",
+      "Brand"
+    ],
+    "categories": [],
+    "markets": [
+      "PT",
+      "ES",
+      "FR",
+      "CH",
+      "BE",
+      "UK",
+      "DE",
+      "AT",
+      "IT",
+      "IR",
+      "IN",
+      "NL",
+      "PH",
+      "JP",
+      "HK",
+      "KO",
+      "AU",
+      "CA",
+      "CO",
+      "MX",
+      "BR",
+      "CL"
+    ],
+    "pocs": [
+      "Joana"
+    ],
+    "start": "2026-07",
+    "end": "2026-07",
+    "insights": []
   }
 ]
