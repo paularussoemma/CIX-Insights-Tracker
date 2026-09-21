@@ -846,6 +846,12 @@
         "impl": true,
         "ready": false,
         "impact": ""
+      },
+      {
+        "desc": "Consolidated global source of truth for brand key messages, ranked per market across 22 markets. Layer 1 (functional credibility, e.g. durability, engineering) and Layer 2 (external validation, e.g. reviews) rank highest across most markets; durability and reviews are the top global quality drivers and trust breakers. Priority weighting is a composite of breadth (importance) and depth (single most important) from the Global Quality Research.",
+        "impl": true,
+        "ready": true,
+        "impact": "yes"
       }
     ]
   }
