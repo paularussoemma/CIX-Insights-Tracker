@@ -627,9 +627,9 @@
       },
       {
         "desc": "Insight 4: \"Return link is critical to customers and is missing from the confirmation email\" Action: New Emma-owned Return Portal - targeting June 2026",
-        "impl": false,
-        "ready": false,
-        "impact": ""
+        "impl": true,
+        "ready": true,
+        "impact": "yes"
       },
       {
         "desc": "Insight 5: \"Returns pickup is unreliable and slow, causing high frustration levels and potential detraction\" Action 1: New Emma-owned Return Portal - targeting June 2026 Action 2: Refunds speed & automation - targeting 4-day manual / 24-hour automated; target Q3 2026",
