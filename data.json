@@ -850,5 +850,22 @@
         "impact": "yes"
       }
     ]
+  },
+  {
+    "id": "CIX-2026-018",
+    "name": "Partner Stores",
+    "project": "Omnihub",
+    "ptag": "P2",
+    "teams": [
+      "Tech"
+    ],
+    "categories": [],
+    "markets": [],
+    "pocs": [
+      "Gabriela"
+    ],
+    "start": "2026-08",
+    "end": "2026-08",
+    "insights": []
   }
 ]
