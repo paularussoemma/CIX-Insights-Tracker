@@ -797,5 +797,55 @@
         "impact": ""
       }
     ]
+  },
+  {
+    "id": "CIX-2026-018",
+    "name": "Quality Perception Research - Wave 2",
+    "project": "",
+    "ptag": "P2",
+    "teams": [
+      "B&CX",
+      "Ecomm",
+      "Markets",
+      "Brand"
+    ],
+    "categories": [],
+    "markets": [
+      "PT",
+      "ES",
+      "FR",
+      "CH",
+      "BE",
+      "UK",
+      "DE",
+      "AT",
+      "IT",
+      "IR",
+      "IN",
+      "NL",
+      "PH",
+      "JP",
+      "HK",
+      "KO",
+      "AU",
+      "CA",
+      "CO",
+      "MX",
+      "BR",
+      "CL"
+    ],
+    "pocs": [
+      "Joana"
+    ],
+    "start": "2026-07",
+    "end": "2026-07",
+    "insights": [
+      {
+        "desc": "Creator Excellence Workstream within IM P2 - Implementation of Quality Perception ranking into AI BRIEF GENERATOR FOR IM tailored to each market using the Clusters derived from the project",
+        "impl": true,
+        "ready": true,
+        "impact": "yes"
+      }
+    ]
   }
 ]
