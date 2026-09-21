@@ -746,10 +746,12 @@
   },
   {
     "id": "CIX-2026-017",
-    "name": "Franchise P1 - Pilot Store Visit",
+    "name": "Franchise P1",
     "project": "Franchise P1",
     "ptag": "P1",
-    "teams": [],
+    "teams": [
+      "Tech"
+    ],
     "categories": [],
     "markets": [
       "FR"
@@ -757,8 +759,8 @@
     "pocs": [
       "Gabriela"
     ],
-    "start": "2026-06",
-    "end": "2026-06",
+    "start": "2026-07",
+    "end": "2026-09",
     "insights": [
       {
         "desc": "\"The store team expressed a clear need to issue refunds as store credit or coupons to retain customers within the franchise network rather than losing them to full cash refunds.\" \t\nAction: Scope store credit and coupon issuance as a medium-term EVA franchise feature to reduce refund churn and retain customers in the network. Co-create with EVA & New Black. Priority: Medium.",
@@ -777,6 +779,12 @@
         "impl": true,
         "ready": false,
         "impact": ""
+      },
+      {
+        "desc": "Insights from research led to blueprint mapping and generated the Franchise Backbone P1 workstreams and smart goals for Q4 and beyond",
+        "impl": true,
+        "ready": true,
+        "impact": "yes"
       }
     ]
   },
