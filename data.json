@@ -511,26 +511,26 @@
     "end": "2026-04",
     "insights": [
       {
-        "desc": "Insight 1: \"Social proof is essential but must be credible and prominent\" Actions: Japan: ~20-change roadmap across Sales Page, Home Page, Category Page, PDP. Planned additional research and working on a testing roadmap Australia: ~15-change roadmap across Sales Page, Home Page, Category Page, PDP. Defined testing roadmap",
+        "desc": "Insight 1: \"Social proof is essential but must be credible and prominent\" \nAction 1: Added/expanded Reviews section on AU webshop to strengthen social proof and validation signals.",
         "impl": true,
-        "ready": false,
-        "impact": ""
+        "ready": true,
+        "impact": "yes"
       },
       {
         "desc": "Insight 2: \"Trial periods and warranties are powerful trust drivers that Emma underuses\" Actions: Japan: ~20-change roadmap across Sales Page, Home Page, Category Page, PDP. Planned additional research and working on a testing roadmap Australia: ~15-change roadmap across Sales Page, Home Page, Category Page, PDP. Defined testing roadmap",
-        "impl": true,
+        "impl": false,
         "ready": false,
         "impact": ""
       },
       {
-        "desc": "Insight 3: \"Visual content is the primary evaluation factor\" Actions: Japan: ~20-change roadmap across Sales Page, Home Page, Category Page, PDP. Planned additional research and working on a testing roadmap Australia: ~15-change roadmap across Sales Page, Home Page, Category Page, PDP. Defined testing roadmap",
+        "desc": "Insight 3: \"Visual content is the primary evaluation factor\" \nAction 1: Completed product gallery with richer, market-relevant imagery on AU webshop (owner: Creatives) to improve material/product transparency and align expectations. Timeline: 2026.",
         "impl": true,
-        "ready": false,
-        "impact": ""
+        "ready": true,
+        "impact": "yes"
       },
       {
         "desc": "Insight 4: \"Benefit-led storytelling outperforms spec-led copy\" Actions: Japan: ~20-change roadmap across Sales Page, Home Page, Category Page, PDP. Planned additional research and working on a testing roadmap Australia: ~15-change roadmap across Sales Page, Home Page, Category Page, PDP. Defined testing roadmap",
-        "impl": true,
+        "impl": false,
         "ready": false,
         "impact": ""
       }
