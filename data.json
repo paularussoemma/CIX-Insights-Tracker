@@ -661,29 +661,29 @@
       "Egon",
       "Team Swap"
     ],
-    "start": "2026-05",
-    "end": "2026-06",
+    "start": "2026-07",
+    "end": "2026-08",
     "insights": [
       {
-        "desc": "Insight 1: \"Customization is the #1 improvement lever - 51.8% want more control over pack composition\"",
+        "desc": "Insight 1: \"Customization is the #1 improvement lever - 51.8% want more control over pack composition\"\nAction: Enable bundle configurability as a key conversion lever.​",
         "impl": false,
         "ready": false,
         "impact": ""
       },
       {
-        "desc": "Insight 2: \"58% start with mattress intent; the bundle converts as an upgrade when savings are obvious\"",
+        "desc": "Insight 2: \"58% start with mattress intent; the bundle converts as an upgrade when savings are obvious\"\nAction: Integrate bundle entry points into the journey as well: sales page, mattress CPs and PDPs.​",
         "impl": false,
         "ready": false,
         "impact": ""
       },
       {
-        "desc": "Insight 3: \"30-50% discount is the sweet spot - 55% need at least 30% off; deeper cuts hurt perceived quality\"",
-        "impl": false,
-        "ready": false,
-        "impact": ""
+        "desc": "Insight 3: \"Calculating bundle savings is hard; they need to be made explicit and easy to verify.\"\nAction: Make savings explicit on the PDP: standalone and bundle prices, and total savings.​\nDesign discovery and further testing for verbatim choices. ​",
+        "impl": true,
+        "ready": true,
+        "impact": "yes"
       },
       {
-        "desc": "Insight 4: \"Detractors question quality and design more than cost - proof through reviews and certifications is the fix\"",
+        "desc": "Insight 4: \"Previous experiences with the brand are associated with multi-item purchases.\"\nAction: Retarget Emma customers, and build a more complete CRM to assist on customer segmentation for bundle recommendation.​",
         "impl": false,
         "ready": false,
         "impact": ""
