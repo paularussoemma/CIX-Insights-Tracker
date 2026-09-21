@@ -785,6 +785,12 @@
         "impl": true,
         "ready": true,
         "impact": "yes"
+      },
+      {
+        "desc": "Store NPS limited to store owners —  built around the commercial relationship rather than the service delivery layer — so the voice of the people actually serving customers was missing. Emma could measure how partners felt about Emma but not how managers and sales representatives experienced the tools, training and support they use in front of customers: a structural blind spot in a channel where staff interaction is the #1 purchase driver.",
+        "impl": true,
+        "ready": true,
+        "impact": "yes"
       }
     ]
   },
