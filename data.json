@@ -845,6 +845,12 @@
         "impl": true,
         "ready": true,
         "impact": "yes"
+      },
+      {
+        "desc": "\"Lead with functional proof: durability tests, materials specs, independent lab results.\nUse measured, precise language; avoid superlatives and broad claims.\nLocalise credibility: show R&D provenance, awards, and country‑of‑origin cues\"",
+        "impl": true,
+        "ready": false,
+        "impact": ""
       }
     ]
   }
