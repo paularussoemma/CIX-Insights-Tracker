@@ -168,13 +168,13 @@
     "end": "2026-02",
     "insights": [
       {
-        "desc": "Insight 1 - final design recommendation",
+        "desc": "Insight 1 - final design recommendation\nAction: Product Launched following research results",
         "impl": true,
         "ready": true,
         "impact": "yes"
       },
       {
-        "desc": "Insight 2 - final design recommendation",
+        "desc": "Insight 2 - final design recommendation\nAction: Product Launched following research results",
         "impl": true,
         "ready": true,
         "impact": "yes"
