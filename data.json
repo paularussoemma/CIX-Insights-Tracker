@@ -354,8 +354,8 @@
       {
         "desc": "Insight 1: \"Emma Original and Emma Lite underperform in comparison to Emma Pro and other global competitor mattresses due to mattress cover perception and layfeel.\" Action 1: Engineers are prototyping new Original mattresses to upgrade stability of the Original line. Product brief for R&D was based on the PVT learnings. Timeline: June-September 2026 Action 2: Product design team is prototyping the new mattress covers. Covers are validated though an iterative testing in June-July. Timeline: June-September 2026",
         "impl": true,
-        "ready": false,
-        "impact": ""
+        "ready": true,
+        "impact": "yes"
       },
       {
         "desc": "Insight 2: \"Original Line consumers struggle to distinguish Original mattresses as the models are too visually similar to signal clear tiering or progression. Entry and mid-tier (Lite and Original) blur together, weakening perceived value.\" Action 1: Product design team is prototyping the new mattress covers (mentioned above). Timeline: June-September 2026 Action 2: CIX (in collaboration with CatMat; Creative; Global Brand) will test several portfolio configurations to identify the option that brings meaningful value difference between each of the tiers to consumer. Timeline (Concept test): mid June-mid August 2026",
