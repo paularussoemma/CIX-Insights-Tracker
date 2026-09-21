@@ -925,5 +925,40 @@
         "impact": "yes"
       }
     ]
+  },
+  {
+    "id": "CIX-2026-020",
+    "name": "Original Line - Concept Tests",
+    "project": "Original Reimagined",
+    "ptag": "",
+    "teams": [
+      "Category Management",
+      "R&D",
+      "Engineering"
+    ],
+    "categories": [
+      "Mattress"
+    ],
+    "markets": [
+      "FR",
+      "DE",
+      "ES",
+      "MX",
+      "AU"
+    ],
+    "pocs": [
+      "Team Swap",
+      "Sofija"
+    ],
+    "start": "2026-08",
+    "end": "2026-09",
+    "insights": [
+      {
+        "desc": "AirGrid did not pose cannibalization risk to Performance, but did not outperform Original's Best concept. ​\n\nThe Good, Better, Best pricing structure works. Customers consistently want to pay what each tier is designed to charge.​\n\nComfort and price are the most important features for customers shopping for a mattress.​",
+        "impl": true,
+        "ready": true,
+        "impact": "yes"
+      }
+    ]
   }
 ]
