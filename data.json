@@ -761,6 +761,12 @@
         "impl": true,
         "ready": true,
         "impact": "yes"
+      },
+      {
+        "desc": "Fix CSV bulk upload for replenishment orders in Partner Store as a short-term priority.\nAction & Impact: The improved self-service experience makes order creation more transparent and actionable: customers can immediately understand whether an order was successfully submitted and resolve most errors without assistance. This reduces avoidable contacts for Operations and Account Managers, improves operational efficiency, and creates a more scalable experience for onboarding new franchisees.",
+        "impl": true,
+        "ready": true,
+        "impact": "yes"
       }
     ]
   },
