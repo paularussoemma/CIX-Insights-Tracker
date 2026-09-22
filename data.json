@@ -389,7 +389,7 @@
       {
         "desc": "\"AU consumers have a high need for detailed product specs, clear differentiation and stronger proof points\" Action 1: Run full PDP audit using Luma's Source of Truth doc; identify incorrect, missing, or insufficiently detailed product info Timeline: June 2026 Action 2: Update copy from audit output and R&D input; pass through copywriting and Legal validation Timeline: July-August 2026",
         "impl": true,
-        "ready": true,
+        "ready": false,
         "impact": "yes"
       },
       {
