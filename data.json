@@ -897,7 +897,7 @@
       {
         "desc": "Our biggest opportunities to better address hygiene in the consumer journey (before advocacy is possible) are in pre-purchase (Trigger and Research/Consideration) and in conditional stages of Cancellations and Returns/Refund. Some of the specific unaddressed needs stated by consumers include:  1) solve my specific sleep problem, 2) show me proof from people like me (e.g. social proof), 3) offer self-service order cancellation, and 4) provide a structured way for me to evaluate the trial period",
         "impl": true,
-        "ready": true,
+        "ready": false,
         "impact": "yes"
       }
     ]
