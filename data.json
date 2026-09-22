@@ -212,8 +212,8 @@
       {
         "desc": "Insight 2: Customers do not understand why the specific product has been recommended to them. The recommendation picks up one or no elements mentioned in the quiz and leaves users with little trust in the recommendation. Users want to know why, based on their answers, they have been recommended that product; additionally it should show the most important information of the product, its price and its reviews.",
         "impl": true,
-        "ready": false,
-        "impact": ""
+        "ready": true,
+        "impact": "yes"
       },
       {
         "desc": "Insight 3: For products like mattresses and pillow, firmness and sleep position seem to be the most relevant.",
