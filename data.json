@@ -647,9 +647,9 @@
         "impact": ""
       },
       {
-        "desc": "Insight 3: \"Calculating bundle savings is hard; they need to be made explicit and easy to verify.\"\nAction: Make savings explicit on the PDP: standalone and bundle prices, and total savings.​\nDesign discovery and further testing for verbatim choices. ​",
+        "desc": "Insight 3: \"Calculating bundle savings is hard; they need to be made explicit and easy to verify.\"\nAction: Make savings explicit on the PDP: standalone and bundle prices, and total savings.​\nDesign discovery and further testing for verbatim choices. ​\nImpact: Prioritized for A/B test in the Shopping Journey roadmap - ongoing",
         "impl": true,
-        "ready": true,
+        "ready": false,
         "impact": "yes"
       },
       {
