@@ -204,22 +204,22 @@
     "end": "2026-03",
     "insights": [
       {
-        "desc": "Insight 1",
+        "desc": "Insight 1: Main locations should be: HP menu. The SubNav, considering its prominent location on the page, has high potential. The Product Finder could be placed as last item in the list. In the menu, it needs to be clear what the function of the Product Finder is.",
         "impl": true,
         "ready": true,
         "impact": "yes"
       },
       {
-        "desc": "Insight 2",
+        "desc": "Insight 2: Customers do not understand why the specific product has been recommended to them. The recommendation picks up one or no elements mentioned in the quiz and leaves users with little trust in the recommendation. Users want to know why, based on their answers, they have been recommended that product; additionally it should show the most important information of the product, its price and its reviews.",
         "impl": true,
         "ready": false,
         "impact": ""
       },
       {
-        "desc": "Insight 3",
+        "desc": "Insight 3: For products like mattresses and pillow, firmness and sleep position seem to be the most relevant.",
         "impl": true,
-        "ready": false,
-        "impact": ""
+        "ready": true,
+        "impact": "yes"
       }
     ]
   },
