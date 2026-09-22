@@ -538,7 +538,7 @@
         "impact": "yes"
       },
       {
-        "desc": "Reviews: FR #73 review-visibility test lifted engagement (+81% review click rate) but hurt PDP conversion (ATC -1.71%, RPU -0.83%) ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ desktop Yotpo block competed with Add to Cart. UK #60 social-proof-in-cart test trended positive (+2.04% Transaction Rate, +1.7% AOV) but was inconclusive. UK #59 removing reviews/UGC from Homepage & Category Pages was a clear win: +3.91% ATC, +6.45% Begin Checkout, +8.48% CVR, +11.92% RPU ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ reviews/UGC there added distraction rather than trust.",
+        "desc": "Reviews: FR #73 review-visibility test lifted engagement (+81% review click rate) but hurt PDP conversion (ATC -1.71%, RPU -0.83%) ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ desktop Yotpo block competed with Add to Cart. UK #60 social-proof-in-cart test trended positive (+2.04% Transaction Rate, +1.7% AOV) but was inconclusive. UK #59 removing reviews/UGC from Homepage & Category Pages was a clear win: +3.91% ATC, +6.45% Begin Checkout, +8.48% CVR, +11.92% RPU ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ reviews/UGC there added distraction rather than trust.",
         "impl": true,
         "ready": true,
         "impact": "yes"
@@ -635,25 +635,25 @@
     "end": "2026-08",
     "insights": [
       {
-        "desc": "Insight 1: \"Customization is the #1 improvement lever - 51.8% want more control over pack composition\"\nAction: Enable bundle configurability as a key conversion lever.â",
+        "desc": "Insight 1: \"Customization is the #1 improvement lever - 51.8% want more control over pack composition\"\nAction: Enable bundle configurability as a key conversion lever.Ã¢ÂÂ",
         "impl": false,
         "ready": false,
         "impact": ""
       },
       {
-        "desc": "Insight 2: \"58% start with mattress intent; the bundle converts as an upgrade when savings are obvious\"\nAction: Integrate bundle entry points into the journey as well: sales page, mattress CPs and PDPs.â",
+        "desc": "Insight 2: \"58% start with mattress intent; the bundle converts as an upgrade when savings are obvious\"\nAction: Integrate bundle entry points into the journey as well: sales page, mattress CPs and PDPs.Ã¢ÂÂ",
         "impl": false,
         "ready": false,
         "impact": ""
       },
       {
-        "desc": "Insight 3: \"Calculating bundle savings is hard; they need to be made explicit and easy to verify.\"\nAction: Make savings explicit on the PDP: standalone and bundle prices, and total savings.â\nDesign discovery and further testing for verbatim choices. â\nImpact: Prioritized for A/B test in the Shopping Journey roadmap - ongoing",
+        "desc": "Insight 3: \"Calculating bundle savings is hard; they need to be made explicit and easy to verify.\"\nAction: Make savings explicit on the PDP: standalone and bundle prices, and total savings.Ã¢ÂÂ\nDesign discovery and further testing for verbatim choices. Ã¢ÂÂ\nImpact: Prioritized for A/B test in the Shopping Journey roadmap - ongoing",
         "impl": true,
         "ready": false,
         "impact": "yes"
       },
       {
-        "desc": "Insight 4: \"Previous experiences with the brand are associated with multi-item purchases.\"\nAction: Retarget Emma customers, and build a more complete CRM to assist on customer segmentation for bundle recommendation.â",
+        "desc": "Insight 4: \"Previous experiences with the brand are associated with multi-item purchases.\"\nAction: Retarget Emma customers, and build a more complete CRM to assist on customer segmentation for bundle recommendation.Ã¢ÂÂ",
         "impl": false,
         "ready": false,
         "impact": ""
@@ -863,7 +863,7 @@
     "end": "2026-07",
     "insights": [
       {
-        "desc": "\"Lead with functional proof: durability tests, materials specs, independent lab results.\nUse measured, precise language; avoid superlatives and broad claims.\nLocalise credibility: show R&D provenance, awards, and countryâofâorigin cues\"",
+        "desc": "\"Lead with functional proof: durability tests, materials specs, independent lab results.\nUse measured, precise language; avoid superlatives and broad claims.\nLocalise credibility: show R&D provenance, awards, and countryÃ¢ÂÂofÃ¢ÂÂorigin cues\"",
         "impl": true,
         "ready": true,
         "impact": "yes"
@@ -930,10 +930,22 @@
     "end": "2026-09",
     "insights": [
       {
-        "desc": "- AirGrid did not pose cannibalization risk to Performance, but did not outperform Original's Best concept.\n- The Good, Better, Best pricing structure works. Customers consistently want to pay what each tier is designed to charge.\n- Comfort and price are the most important features for customers shopping for a mattress.\nActions & Decisions: \nAirGrid stays exclusive to Performance Line\n27cm will remain the height for Original Pro\nHard cluster will use the same upsell story as medium-soft",
+        "desc": "- AirGrid did not pose cannibalization risk to Performance, but did not outperform Original's Best concept.\nActions & Decisions: \nAirGrid stays exclusive to Performance Line\n27cm will remain the height for Original Pro\nHard cluster will use the same upsell story as medium-soft",
         "impl": true,
         "ready": true,
         "impact": "yes"
+      },
+      {
+        "desc": "Insight 2: The Good, Better, Best pricing structure works. Customers consistently want to pay what each tier is designed to charge.",
+        "impl": true,
+        "ready": false,
+        "impact": ""
+      },
+      {
+        "desc": "Comfort and price are the most important features for customers shopping for a mattress.",
+        "impl": false,
+        "ready": false,
+        "impact": ""
       }
     ]
   }
